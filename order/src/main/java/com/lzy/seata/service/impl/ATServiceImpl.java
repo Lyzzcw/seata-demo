@@ -62,6 +62,6 @@ public class ATServiceImpl implements ATService {
                 .productId(productId)
                 .status(2)
                 .build();
-        return orderMapper.insert(order);
+        return orderMapper.insertSelective(order);
     }
 }

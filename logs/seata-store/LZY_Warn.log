@@ -81,3 +81,23 @@
 2022-06-28 17:54:18.729 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
 2022-06-28 17:54:18.730 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
 2022-06-28 17:54:19.917 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 18:06:36.133 [Thread-29] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 18:06:36.134 [Thread-26] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 18:06:36.134 [Thread-29] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 18:06:36.134 [Thread-26] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 18:06:37.231 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 18:09:18.782 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 18:09:18.793 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 18:09:18.795 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 18:09:18.796 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 18:09:20.002 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 18:10:49.302 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 18:10:49.303 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 18:10:49.302 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 18:10:49.304 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 18:10:50.452 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 18:15:43.970 [Thread-22] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 18:15:43.971 [Thread-22] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 18:15:43.970 [Thread-25] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 18:15:43.972 [Thread-25] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 18:15:45.102 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException

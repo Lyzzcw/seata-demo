@@ -835,3 +835,168 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2022-06-28 17:54:48.148 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
 2022-06-28 17:54:48.148 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
 2022-06-28 17:54:48.771 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 18:03:25.896 [http-nio-7003-exec-4] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 18:03:25.915 [http-nio-7003-exec-4] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 18:03:25.915 [http-nio-7003-exec-4] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 18:03:25.936 [http-nio-7003-exec-4] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 18:03:25.936 [http-nio-7003-exec-4] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 18:06:36.874 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:06:36.878 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 18:06:36.883 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 18:06:37.231 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:06:37.238 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 18:06:37.282 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 18:06:47.216 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 18:06:49.024 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 18:06:49.661 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 18:06:49.743 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:06:49.746 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:06:49.939 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 18:06:49.947 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:06:49.947 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 18:06:49.948 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 18:06:50.055 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 18:06:50.055 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1017 ms
+2022-06-28 18:06:51.768 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:06:53.271 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:06:55.010 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 18:06:55.038 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 18:06:55.053 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 18:06:55.185 [main] INFO, org.reflections.Reflections: Reflections took 130 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:06:55.201 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 18:06:55.217 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 18:06:55.235 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 18:06:55.381 [main] INFO, org.reflections.Reflections: Reflections took 144 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:06:59.032 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:06:59.043 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 18:06:59.055 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 18:07:00.466 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 15.372 seconds (JVM running for 17.222)
+2022-06-28 18:07:04.372 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 18:07:04.372 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 18:07:04.373 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 18:07:04.438 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 18:07:04.656 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 18:07:04.656 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 18:07:04.717 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 18:07:04.717 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 18:07:05.253 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 18:09:19.605 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:09:19.612 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 18:09:19.641 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 18:09:20.003 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:09:20.017 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 18:09:20.025 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 18:09:29.493 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 18:09:31.484 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 18:09:32.126 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 18:09:32.212 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:09:32.215 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:09:32.420 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 18:09:32.428 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:09:32.429 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 18:09:32.429 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 18:09:32.549 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 18:09:32.549 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1051 ms
+2022-06-28 18:09:34.153 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:09:35.579 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:09:37.195 [main] INFO, org.reflections.Reflections: Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 18:09:37.226 [main] INFO, org.reflections.Reflections: Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 18:09:37.240 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 18:09:37.372 [main] INFO, org.reflections.Reflections: Reflections took 128 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:09:37.384 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 18:09:37.398 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 18:09:37.422 [main] INFO, org.reflections.Reflections: Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 18:09:37.566 [main] INFO, org.reflections.Reflections: Reflections took 141 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:09:41.002 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:09:41.014 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 18:09:41.027 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 18:09:42.331 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 15.171 seconds (JVM running for 16.766)
+2022-06-28 18:09:49.721 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 18:09:49.721 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 18:09:49.722 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 18:09:49.952 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 18:09:50.141 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 18:09:50.141 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 18:09:50.188 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 18:09:50.188 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 18:09:50.701 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 18:10:50.102 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:10:50.106 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 18:10:50.109 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 18:10:50.453 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:10:50.461 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 18:10:50.468 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 18:10:59.345 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 18:11:01.092 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 18:11:01.740 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 18:11:01.860 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:11:01.863 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:11:02.155 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 18:11:02.165 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:11:02.165 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 18:11:02.165 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 18:11:02.289 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 18:11:02.289 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1182 ms
+2022-06-28 18:11:04.005 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:11:05.472 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:11:07.464 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 18:11:07.496 [main] INFO, org.reflections.Reflections: Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 18:11:07.513 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 18:11:07.747 [main] INFO, org.reflections.Reflections: Reflections took 232 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:11:07.760 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 18:11:07.777 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 18:11:07.802 [main] INFO, org.reflections.Reflections: Reflections took 23 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 18:11:07.949 [main] INFO, org.reflections.Reflections: Reflections took 145 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:11:11.269 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:11:11.281 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 18:11:11.292 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 18:11:12.588 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 15.455 seconds (JVM running for 17.077)
+2022-06-28 18:12:13.326 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 18:12:13.327 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 18:12:13.328 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 18:12:13.397 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 18:12:13.610 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 18:12:13.611 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 18:12:13.655 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 18:12:13.655 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 18:12:14.195 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 18:15:44.754 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:15:44.760 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 18:15:44.764 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 18:15:45.102 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:15:45.110 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 18:15:45.116 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 18:15:51.033 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 18:15:52.724 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 18:15:53.329 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 18:15:53.413 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:15:53.415 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 18:15:53.586 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 18:15:53.594 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:15:53.595 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 18:15:53.595 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 18:15:53.688 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 18:15:53.688 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 948 ms
+2022-06-28 18:15:55.190 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 18:15:56.602 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 18:15:58.163 [main] INFO, org.reflections.Reflections: Reflections took 27 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 18:15:58.191 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 18:15:58.207 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 18:15:58.333 [main] INFO, org.reflections.Reflections: Reflections took 123 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:15:58.344 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 18:15:58.361 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 18:15:58.377 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 18:15:58.509 [main] INFO, org.reflections.Reflections: Reflections took 130 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 18:16:01.964 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 18:16:01.974 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 18:16:01.986 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 18:16:03.300 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 14.567 seconds (JVM running for 16.233)
+2022-06-28 18:16:03.420 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 18:16:03.421 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 18:16:03.422 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 18:16:03.481 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 18:16:03.678 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 18:16:03.678 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 18:16:03.719 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 18:16:03.719 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 18:16:04.259 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited

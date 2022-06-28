@@ -25,7 +25,7 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.lzy.seata.entity.Order">
-    insert into order (id, product_id, num,
+    insert into `order` (id, product_id, num,
       user_id, create_time, status
       )
     values (#{id,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT}, #{num,jdbcType=BIGINT},
@@ -33,7 +33,7 @@
       )
   </insert>
   <insert id="insertSelective" parameterType="com.lzy.seata.entity.Order">
-    insert into order
+    insert into `order`
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
