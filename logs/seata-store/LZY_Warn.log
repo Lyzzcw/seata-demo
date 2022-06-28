@@ -1,0 +1,83 @@
+2022-06-28 14:33:37.384 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store] & group[store_group]
+2022-06-28 14:33:37.392 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store.yml] & group[store_group]
+2022-06-28 14:33:39.737 [main] WARN, o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ATController': Unsatisfied dependency expressed through field 'atService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ATServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storeMapper' defined in file [C:\Users\Administrator\IdeaProjects\seata-demo\store\target\classes\com\lzy\seata\mapper\StoreMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\IdeaProjects\seata-demo\store\target\classes\mapper\StoreMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\IdeaProjects\seata-demo\store\target\classes\mapper\StoreMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.lzy.seata.mapper.StoreMapper.BaseResultMap
+2022-06-28 14:33:39.837 [Thread-8] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 14:33:39.837 [Thread-3] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 14:33:39.838 [Thread-8] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 14:33:39.838 [Thread-3] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:09:05.763 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store] & group[store_group]
+2022-06-28 15:09:05.772 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store.yml] & group[store_group]
+2022-06-28 15:09:06.467 [main] WARN, o.m.s.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.lzy.seata]' package. Please check your configuration.
+2022-06-28 15:09:07.844 [main] WARN, o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ATController': Unsatisfied dependency expressed through field 'atService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ATServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lzy.seata.mapper.StoreMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-06-28 15:09:07.893 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:09:07.894 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:09:07.895 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:09:07.895 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:12:35.502 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store] & group[store_group]
+2022-06-28 15:12:35.508 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store.yml] & group[store_group]
+2022-06-28 15:12:36.127 [main] WARN, o.m.s.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.lzy.seata]' package. Please check your configuration.
+2022-06-28 15:12:37.245 [main] WARN, o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ATController': Unsatisfied dependency expressed through field 'atService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ATServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lzy.seata.mapper.StoreMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-06-28 15:12:37.286 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:12:37.287 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:12:37.288 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:12:37.288 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:13:19.595 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store] & group[store_group]
+2022-06-28 15:13:19.602 [main] WARN, c.a.c.n.c.NacosPropertySourceBuilder: Ignore the empty nacos configuration and get it based on dataId[seata-store.yml] & group[store_group]
+2022-06-28 15:14:43.119 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:14:43.119 [Thread-15] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:14:43.119 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:14:43.121 [Thread-6] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:34:09.693 [Thread-20] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:34:09.693 [Thread-14] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:34:09.696 [Thread-20] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:34:09.697 [Thread-14] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:36:34.233 [Thread-15] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:36:34.234 [Thread-21] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:36:34.235 [Thread-21] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:36:34.234 [Thread-15] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:36:35.364 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 15:41:08.341 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:41:08.342 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:41:08.341 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:41:08.343 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 15:41:09.640 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 15:41:36.544 [http-nio-7001-exec-1] WARN, o.s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present]
+2022-06-28 15:42:34.981 [Thread-29] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 15:42:34.980 [Thread-26] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 15:42:34.982 [Thread-29] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 15:42:34.982 [Thread-26] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 16:03:03.482 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 16:03:03.482 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 16:03:03.485 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 16:03:03.486 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 16:03:04.723 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 16:04:16.064 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 16:04:16.064 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 16:04:16.064 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 16:04:16.065 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 16:04:17.151 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 16:48:40.377 [Thread-23] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 16:48:40.377 [Thread-26] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 16:48:40.379 [Thread-23] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 16:48:40.379 [Thread-26] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 16:48:41.490 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 17:00:17.597 [Thread-27] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 17:00:17.597 [Thread-24] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 17:00:17.598 [Thread-24] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 17:00:17.598 [Thread-27] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 17:00:18.705 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 17:01:51.514 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 17:01:51.515 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 17:01:51.515 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 17:01:51.517 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 17:01:52.634 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 17:07:13.305 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 17:07:13.306 [Thread-25] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 17:07:13.306 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 17:07:13.307 [Thread-28] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 17:07:14.397 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-28 17:54:18.727 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Start destroying Publisher
+2022-06-28 17:54:18.727 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-28 17:54:18.729 [Thread-27] WARN, c.a.nacos.common.notify.NotifyCenter: [NotifyCenter] Destruction of the end
+2022-06-28 17:54:18.730 [Thread-30] WARN, c.a.n.c.http.HttpClientBeanHolder: [HttpClientBeanHolder] Destruction of the end
+2022-06-28 17:54:19.917 [SpringContextShutdownHook] WARN, o.s.b.f.s.DisposableBeanAdapter: Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException

@@ -1,0 +1,15 @@
+nacos : startup.cmd -m standalone
+
+在seata-1.3.0\script\config-center\nacos中有一个脚本nacos-config.sh则是将
+config.txt中的全部配置自动推送到nacos中，运行下面命令（windows可以使用git bash运
+行）：# -h 主机，你可以使用localhost，-p 端口号 你可以使用8848，-t 命名空间ID，-u 用户名，-p 密码
+$ sh nacos-config.sh -h 127.0.0.1 -p 8848 -g SEATA_GROUP -t 0a6538f6-cefc-47c9-9a60-c398fd3432e3 -u nacos -w nacos
+
+
+Seata客户端创建很简单，需要注意以下几点内容：
+
+seata客户端的版本需要和服务端保持一致
+每个服务的数据库都要创建一个undo_log回滚日志表
+客户端指定的事务分组名称要和Nacos相同，比如service.vgroupMapping.seata-account-tx-group=default
+前缀：service.vgroupMapping.
+后缀：{自定义}

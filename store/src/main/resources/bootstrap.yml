@@ -1,0 +1,99 @@
+log:
+  level: INFO
+server:
+  port: 7001
+  servlet:
+    context-path: /seata-store
+spring:
+  application:
+    ## 指定服务名称，在nacos中的名字
+    name: seata-store
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata-store?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: eslink
+    type: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    nacos:
+      discovery:
+        #nacos的服务地址，nacos-server中IP地址:端口号
+        server-addr: 127.0.0.1:8848
+        namespace: e54cc060-65ed-4a40-b8e6-7789ee9a1044
+      config:
+        server-addr: 127.0.0.1:8848
+        #配置内容的数据格式，目前只支持 properties 和 yaml 类型，
+        #这个和 dataId有关-> ${prefix(spring-application-name)}-${spring.profiles.active}.${file-extension}
+        file-extension: yml
+        namespace: e54cc060-65ed-4a40-b8e6-7789ee9a1044
+        group: store_group
+        enabled: false
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+feign:
+  #熔断降级
+  sentinel:
+    enabled: true
+  client:
+    httpclient:
+      # 开启 Http Client
+      enabled: true
+    config:
+      ## default 设置的全局超时时间，指定服务名称可以设置单个服务的超时时间
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+      ## 为provider这个服务单独配置超时时间
+      provider:
+        connectTimeout: 30000
+        readTimeout: 30000
+  ## 开启压缩
+  compression:
+    request:
+      enabled: true
+      ## 开启压缩的阈值，单位字节，默认2048，即是2k，这里为了演示效果设置成10字 节
+      min-request-size: 10
+      mime-types: text/xml,application/xml,application/json
+    response:
+      enabled: true
+## 客户端seata的相关配置
+seata:
+  ## 是否开启seata，默认true
+  enabled: true
+  application-id: ${spring.application.name}
+  ## seata事务组的名称，一定要和config.tx(nacos)中配置的相同，示例中需要添加
+  ## service.vgroupMapping.seata-store-tx-group=default 配置文件
+  tx-service-group: ${spring.application.name}-tx-group
+  ## 配置中心的配置
+  config:
+  ## 使用类型nacos
+    type: nacos
+    ## nacos作为配置中心的相关配置，需要和server在同一个注册中心下
+    nacos:
+      ## 命名空间，需要server端(registry和config)、nacos配置client端 (registry和config)保持一致
+      namespace: e54cc060-65ed-4a40-b8e6-7789ee9a1044
+      ## 地址
+      server-addr: localhost:8848
+      ## 组， 需要server端(registry和config)、nacos配置client端 (registry和config)保持一致
+      group: SEATA_GROUP
+      ## 用户名和密码
+      username: nacos
+      password: nacos
+  registry:
+    type: nacos
+    nacos:
+      ## 这里的名字一定要和seata服务端中的名称相同，默认是seata-server
+      application: seata-server
+      ## 需要server端(registry和config)、nacos配置client端(registry和 config)保持一致
+      group: SEATA_GROUP
+      namespace: e54cc060-65ed-4a40-b8e6-7789ee9a1044
+      username: nacos
+      password: nacos
+      server-addr: localhost:8848
+logging:
+  config: classpath:logback-spring.xml
+management:
+  endpoints:
+    web:
+      exposure: ## yml文件中存在特殊字符，必须用单引号包含，否则启动报错
+        include: '*'

@@ -1,0 +1,837 @@
+2022-06-28 14:33:30.349 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 14:33:33.024 [main] INFO, c.a.n.c.c.i.LocalConfigInfoProcessor: LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2022-06-28 14:33:33.029 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 75433ec7-240d-41be-8e68-81e0e0ba082d_config-0
+2022-06-28 14:33:33.091 [main] INFO, org.reflections.Reflections: Reflections took 39 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 14:33:33.129 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 14:33:33.145 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 14:33:33.311 [main] INFO, org.reflections.Reflections: Reflections took 161 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 14:33:33.324 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 14:33:33.338 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 14:33:33.353 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 14:33:33.483 [main] INFO, org.reflections.Reflections: Reflections took 126 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 14:33:33.485 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 14:33:33.485 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$302/1824322115
+2022-06-28 14:33:33.485 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$303/702999333
+2022-06-28 14:33:33.486 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 14:33:33.487 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 14:33:33.498 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-28 14:33:37.199 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1656398016697_127.0.0.1_22422
+2022-06-28 14:33:37.200 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Notify connected event to listeners.
+2022-06-28 14:33:37.201 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 14:33:37.201 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0] Connected,notify listen context...
+2022-06-28 14:33:37.201 [main] INFO, c.alibaba.nacos.common.remote.client: [75433ec7-240d-41be-8e68-81e0e0ba082d_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 14:33:37.270 [main] INFO, c.a.nacos.client.config.impl.Limiter: limitTime:5.0
+2022-06-28 14:33:37.393 [main] INFO, o.s.c.b.c.PropertySourceBootstrapConfiguration: Located property source: [BootstrapPropertySource {name='bootstrapProperties-seata-store.yml,store_group'}, BootstrapPropertySource {name='bootstrapProperties-seata-store,store_group'}]
+2022-06-28 14:33:37.418 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 14:33:38.284 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=05941ee4-8c62-37cd-b4c1-f31454d3a566
+2022-06-28 14:33:38.308 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$26a5777b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.318 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.355 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.359 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.361 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.361 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 14:33:38.404 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 14:33:38.409 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.421 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 3bb30d80-ca15-4565-9db8-367457cc7907_config-0
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$302/1824322115
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$303/702999333
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 14:33:38.622 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+2022-06-28 14:33:38.741 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0] Success to connect to server [localhost:8848] on start up,connectionId=1656398018628_127.0.0.1_22426
+2022-06-28 14:33:38.741 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Notify connected event to listeners.
+2022-06-28 14:33:38.741 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0] Connected,notify listen context...
+2022-06-28 14:33:38.741 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 14:33:38.741 [main] INFO, c.alibaba.nacos.common.remote.client: [3bb30d80-ca15-4565-9db8-367457cc7907_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 14:33:38.756 [main] INFO, c.a.n.client.config.utils.JvmUtil: isMultiInstance:false
+2022-06-28 14:33:38.759 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 14:33:38.936 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 14:33:38.937 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 14:33:38.954 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 14:33:38.955 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 14:33:38.960 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 14:33:38.961 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 14:33:38.961 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 14:33:39.050 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:39.053 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 14:33:39.259 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 14:33:39.270 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 14:33:39.271 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 14:33:39.271 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 14:33:39.378 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 14:33:39.378 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1943 ms
+2022-06-28 14:33:39.570 [main] INFO, i.s.s.a.d.SeataAutoDataSourceProxyCreator: Auto proxy of [druidDataSource]
+2022-06-28 14:33:39.738 [main] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-0} closing ...
+2022-06-28 14:33:39.742 [main] INFO, o.a.catalina.core.StandardService: Stopping service [Tomcat]
+2022-06-28 14:33:39.790 [main] INFO, o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-28 15:08:59.774 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:09:01.665 [main] INFO, c.a.n.c.c.i.LocalConfigInfoProcessor: LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2022-06-28 15:09:01.670 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0
+2022-06-28 15:09:01.729 [main] INFO, org.reflections.Reflections: Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:09:01.762 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:09:01.779 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:09:01.925 [main] INFO, org.reflections.Reflections: Reflections took 143 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:09:01.948 [main] INFO, org.reflections.Reflections: Reflections took 22 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:09:01.968 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:09:01.986 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:09:02.109 [main] INFO, org.reflections.Reflections: Reflections took 118 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:09:02.113 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:09:02.113 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1863100050
+2022-06-28 15:09:02.114 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/739264372
+2022-06-28 15:09:02.115 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:09:02.116 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:09:02.124 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-28 15:09:05.492 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1656400145291_127.0.0.1_26984
+2022-06-28 15:09:05.493 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Notify connected event to listeners.
+2022-06-28 15:09:05.494 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0] Connected,notify listen context...
+2022-06-28 15:09:05.494 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:09:05.495 [main] INFO, c.alibaba.nacos.common.remote.client: [50cd88ff-6247-482e-ae9e-8301b4deb3eb_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:09:05.628 [main] INFO, c.a.nacos.client.config.impl.Limiter: limitTime:5.0
+2022-06-28 15:09:05.773 [main] INFO, o.s.c.b.c.PropertySourceBootstrapConfiguration: Located property source: [BootstrapPropertySource {name='bootstrapProperties-seata-store.yml,store_group'}, BootstrapPropertySource {name='bootstrapProperties-seata-store,store_group'}]
+2022-06-28 15:09:05.799 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:09:06.526 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=48a24ad7-c2ea-32bf-bc26-9b82f6ea95b9
+2022-06-28 15:09:06.554 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$74dec8d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.565 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.603 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.608 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.611 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.611 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 15:09:06.654 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 15:09:06.661 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.671 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1863100050
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/739264372
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:09:06.876 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:09:06.877 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+2022-06-28 15:09:07.000 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0] Success to connect to server [localhost:8848] on start up,connectionId=1656400146884_127.0.0.1_26987
+2022-06-28 15:09:07.000 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:09:07.000 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Notify connected event to listeners.
+2022-06-28 15:09:07.000 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0] Connected,notify listen context...
+2022-06-28 15:09:07.000 [main] INFO, c.alibaba.nacos.common.remote.client: [e6e47845-4c13-4dda-b4dd-c80a98de3810_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:09:07.010 [main] INFO, c.a.n.client.config.utils.JvmUtil: isMultiInstance:false
+2022-06-28 15:09:07.014 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 15:09:07.184 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:09:07.184 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:09:07.202 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 15:09:07.203 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 15:09:07.210 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:09:07.210 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:09:07.210 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 15:09:07.291 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:07.294 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:09:07.656 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:09:07.667 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:09:07.667 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:09:07.668 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:09:07.775 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:09:07.775 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1959 ms
+2022-06-28 15:09:07.848 [main] INFO, o.a.catalina.core.StandardService: Stopping service [Tomcat]
+2022-06-28 15:09:07.866 [main] INFO, o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-28 15:12:29.991 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:12:31.731 [main] INFO, c.a.n.c.c.i.LocalConfigInfoProcessor: LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2022-06-28 15:12:31.735 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 2a032c7c-4844-4ce4-969a-ee002f179f07_config-0
+2022-06-28 15:12:31.780 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:12:31.808 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:12:31.822 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:12:31.959 [main] INFO, org.reflections.Reflections: Reflections took 134 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:12:31.972 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:12:31.988 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:12:32.007 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:12:32.129 [main] INFO, org.reflections.Reflections: Reflections took 117 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:12:32.129 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:12:32.130 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1942356772
+2022-06-28 15:12:32.130 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/1907241392
+2022-06-28 15:12:32.131 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:12:32.132 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:12:32.139 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-28 15:12:35.388 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1656400355197_127.0.0.1_27130
+2022-06-28 15:12:35.389 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Notify connected event to listeners.
+2022-06-28 15:12:35.389 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0] Connected,notify listen context...
+2022-06-28 15:12:35.389 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:12:35.390 [main] INFO, c.alibaba.nacos.common.remote.client: [2a032c7c-4844-4ce4-969a-ee002f179f07_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:12:35.486 [main] INFO, c.a.nacos.client.config.impl.Limiter: limitTime:5.0
+2022-06-28 15:12:35.509 [main] INFO, o.s.c.b.c.PropertySourceBootstrapConfiguration: Located property source: [BootstrapPropertySource {name='bootstrapProperties-seata-store.yml,store_group'}, BootstrapPropertySource {name='bootstrapProperties-seata-store,store_group'}]
+2022-06-28 15:12:35.535 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:12:36.192 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=48a24ad7-c2ea-32bf-bc26-9b82f6ea95b9
+2022-06-28 15:12:36.215 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$4d8933ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.224 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.254 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.259 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.261 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.261 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 15:12:36.301 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 15:12:36.307 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.319 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.503 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0
+2022-06-28 15:12:36.503 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:12:36.503 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1942356772
+2022-06-28 15:12:36.504 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/1907241392
+2022-06-28 15:12:36.504 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:12:36.504 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:12:36.504 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+2022-06-28 15:12:36.624 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0] Success to connect to server [localhost:8848] on start up,connectionId=1656400356512_127.0.0.1_27132
+2022-06-28 15:12:36.624 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:12:36.624 [main] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:12:36.624 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0]Notify connected event to listeners.
+2022-06-28 15:12:36.624 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [3b88d6f7-0935-47e8-99d0-2cbccd001d08_config-0] Connected,notify listen context...
+2022-06-28 15:12:36.633 [main] INFO, c.a.n.client.config.utils.JvmUtil: isMultiInstance:false
+2022-06-28 15:12:36.636 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 15:12:36.776 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:12:36.777 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:12:36.791 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 15:12:36.791 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 15:12:36.796 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:12:36.796 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:12:36.796 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 15:12:36.874 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:36.877 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:12:37.072 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:12:37.080 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:12:37.081 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:12:37.081 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:12:37.187 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:12:37.187 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1637 ms
+2022-06-28 15:12:37.249 [main] INFO, o.a.catalina.core.StandardService: Stopping service [Tomcat]
+2022-06-28 15:12:37.267 [main] INFO, o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-28 15:13:14.187 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:13:15.855 [main] INFO, c.a.n.c.c.i.LocalConfigInfoProcessor: LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2022-06-28 15:13:15.858 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of b4983f11-a908-4eec-90c4-e45c50fd5779_config-0
+2022-06-28 15:13:15.903 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:13:15.929 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:13:15.945 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:13:16.080 [main] INFO, org.reflections.Reflections: Reflections took 132 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:13:16.091 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:13:16.109 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:13:16.126 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:13:16.242 [main] INFO, org.reflections.Reflections: Reflections took 112 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:13:16.243 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:13:16.244 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1942356772
+2022-06-28 15:13:16.244 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/1907241392
+2022-06-28 15:13:16.245 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:13:16.246 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:13:16.253 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-28 15:13:19.466 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1656400399282_127.0.0.1_27190
+2022-06-28 15:13:19.470 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Notify connected event to listeners.
+2022-06-28 15:13:19.470 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0] Connected,notify listen context...
+2022-06-28 15:13:19.471 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:13:19.472 [main] INFO, c.alibaba.nacos.common.remote.client: [b4983f11-a908-4eec-90c4-e45c50fd5779_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:13:19.577 [main] INFO, c.a.nacos.client.config.impl.Limiter: limitTime:5.0
+2022-06-28 15:13:19.602 [main] INFO, o.s.c.b.c.PropertySourceBootstrapConfiguration: Located property source: [BootstrapPropertySource {name='bootstrapProperties-seata-store.yml,store_group'}, BootstrapPropertySource {name='bootstrapProperties-seata-store,store_group'}]
+2022-06-28 15:13:19.625 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:13:20.311 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=975bae79-5cc7-3402-9836-1dee36f67f07
+2022-06-28 15:13:20.335 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$f7cc047a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.343 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.372 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.376 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.377 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.378 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 15:13:20.413 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 15:13:20.420 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.427 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]RpcClient init label, labels={module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$308/1942356772
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$309/1907241392
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2022-06-28 15:13:20.609 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]RpcClient init, ServerListFactory =com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2022-06-28 15:13:20.610 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+2022-06-28 15:13:20.732 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0] Success to connect to server [localhost:8848] on start up,connectionId=1656400400618_127.0.0.1_27194
+2022-06-28 15:13:20.732 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Notify connected event to listeners.
+2022-06-28 15:13:20.732 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:13:20.732 [main] INFO, c.alibaba.nacos.common.remote.client: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:13:20.733 [com.alibaba.nacos.client.remote.worker] INFO, c.a.n.c.config.impl.ClientWorker: [61f8b4e3-8f16-4e07-acfa-532b4d4f3f33_config-0] Connected,notify listen context...
+2022-06-28 15:13:20.741 [main] INFO, c.a.n.client.config.utils.JvmUtil: isMultiInstance:false
+2022-06-28 15:13:20.744 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 15:13:20.881 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:13:20.881 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:13:20.894 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 15:13:20.895 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 15:13:20.900 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:13:20.900 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:13:20.900 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 15:13:20.978 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:20.980 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:13:21.187 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:13:21.196 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:13:21.197 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:13:21.197 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:13:21.307 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:13:21.308 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1670 ms
+2022-06-28 15:13:21.472 [main] INFO, i.s.s.a.d.SeataAutoDataSourceProxyCreator: Auto proxy of [druidDataSource]
+2022-06-28 15:13:21.846 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:13:23.292 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:13:26.157 [main] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 15:13:26.240 [main] INFO, c.a.n.c.config.impl.ClientWorker: [config_rpc_client] [subscribe] service.vgroupMapping.seata-store-tx-group+SEATA_GROUP+e54cc060-65ed-4a40-b8e6-7789ee9a1044
+2022-06-28 15:13:26.255 [main] INFO, c.a.n.client.config.impl.CacheData: [config_rpc_client] [add-listener] ok, tenant=e54cc060-65ed-4a40-b8e6-7789ee9a1044, dataId=service.vgroupMapping.seata-store-tx-group, group=SEATA_GROUP, cnt=1
+2022-06-28 15:13:26.285 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Property : null
+2022-06-28 15:13:26.291 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Environment :null
+2022-06-28 15:13:26.292 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Property :null
+2022-06-28 15:13:26.508 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 1d934ff2-c455-4dd5-9e5a-59137b7969f7
+2022-06-28 15:13:26.508 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]RpcClient init label, labels={module=naming, source=sdk}
+2022-06-28 15:13:26.510 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+2022-06-28 15:13:26.510 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2022-06-28 15:13:26.511 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2022-06-28 15:13:26.512 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+2022-06-28 15:13:26.670 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7] Success to connect to server [localhost:8848] on start up,connectionId=1656400406538_127.0.0.1_27209
+2022-06-28 15:13:26.670 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]Notify connected event to listeners.
+2022-06-28 15:13:26.670 [com.alibaba.nacos.client.remote.worker] INFO, com.alibaba.nacos.client.naming: Grpc connection connect
+2022-06-28 15:13:26.670 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:13:26.670 [main] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:13:26.865 [main] INFO, com.alibaba.nacos.client.naming: init new ips(0) service: SEATA_GROUP@@seata-server@@null -> []
+2022-06-28 15:13:26.867 [main] INFO, com.alibaba.nacos.client.naming: current ips:(0) service: SEATA_GROUP@@seata-server@@null -> []
+2022-06-28 15:13:26.935 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Property : null
+2022-06-28 15:13:26.935 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Environment :null
+2022-06-28 15:13:26.935 [main] INFO, com.alibaba.nacos.client.naming: initializer namespace from System Property :null
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [RpcClientFactory] create a new rpc client of 89bfda16-7c2f-4aab-b6aa-feece3c6b8f4
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]RpcClient init label, labels={module=naming, source=sdk}
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2022-06-28 15:13:26.936 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4] Try to connect to server on start up, server: {serverIp='127.0.0.1', server main port=8848}
+2022-06-28 15:13:27.065 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4] Success to connect to server [127.0.0.1:8848] on start up,connectionId=1656400406944_127.0.0.1_27210
+2022-06-28 15:13:27.066 [com.alibaba.nacos.client.remote.worker] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]Notify connected event to listeners.
+2022-06-28 15:13:27.066 [com.alibaba.nacos.client.remote.worker] INFO, com.alibaba.nacos.client.naming: Grpc connection connect
+2022-06-28 15:13:27.066 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2022-06-28 15:13:27.066 [main] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+2022-06-28 15:13:27.117 [main] INFO, com.alibaba.nacos.client.naming: init new ips(0) service: DEFAULT_GROUP@@seata-store@@DEFAULT -> []
+2022-06-28 15:13:27.120 [main] INFO, com.alibaba.nacos.client.naming: current ips:(0) service: DEFAULT_GROUP@@seata-store@@DEFAULT -> []
+2022-06-28 15:13:27.147 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:13:27.165 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 15:13:27.264 [main] INFO, com.alibaba.nacos.client.naming: [REGISTER-SERVICE] e54cc060-65ed-4a40-b8e6-7789ee9a1044 registering service seata-store with instance Instance{instanceId='null', ip='192.168.9.146', port=7001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-28 15:13:27.301 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 15:13:27.452 [nacos-grpc-client-executor-4] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]receive server push request,request=NotifySubscriberRequest,requestId=1
+2022-06-28 15:13:27.452 [nacos-grpc-client-executor-4] INFO, com.alibaba.nacos.client.naming: init new ips(0) service: SEATA_GROUP@@seata-server -> []
+2022-06-28 15:13:27.453 [nacos-grpc-client-executor-4] INFO, com.alibaba.nacos.client.naming: current ips:(0) service: SEATA_GROUP@@seata-server -> []
+2022-06-28 15:13:27.457 [nacos-grpc-client-executor-4] INFO, c.alibaba.nacos.common.remote.client: [1d934ff2-c455-4dd5-9e5a-59137b7969f7]ack server push request,request=NotifySubscriberRequest,requestId=1
+2022-06-28 15:13:27.628 [nacos-grpc-client-executor-5] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]receive server push request,request=NotifySubscriberRequest,requestId=2
+2022-06-28 15:13:27.631 [nacos-grpc-client-executor-5] INFO, com.alibaba.nacos.client.naming: init new ips(1) service: DEFAULT_GROUP@@seata-store -> [{"ip":"192.168.9.146","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@seata-store","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-28 15:13:27.632 [nacos-grpc-client-executor-5] INFO, com.alibaba.nacos.client.naming: current ips:(1) service: DEFAULT_GROUP@@seata-store -> [{"ip":"192.168.9.146","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@seata-store","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-28 15:13:27.634 [nacos-grpc-client-executor-5] INFO, c.alibaba.nacos.common.remote.client: [89bfda16-7c2f-4aab-b6aa-feece3c6b8f4]ack server push request,request=NotifySubscriberRequest,requestId=2
+2022-06-28 15:13:28.079 [com.alibaba.nacos.client.naming.updater.0] INFO, com.alibaba.nacos.client.naming: new ips(1) service: DEFAULT_GROUP@@seata-store@@DEFAULT -> [{"ip":"192.168.9.146","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@seata-store","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-28 15:13:28.079 [com.alibaba.nacos.client.naming.updater.0] INFO, com.alibaba.nacos.client.naming: current ips:(1) service: DEFAULT_GROUP@@seata-store@@DEFAULT -> [{"ip":"192.168.9.146","port":7001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@seata-store","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-28 15:13:28.910 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 16.731 seconds (JVM running for 18.287)
+2022-06-28 15:13:28.912 [main] INFO, c.a.n.c.config.impl.ClientWorker: [config_rpc_client] [subscribe] seata-store.yml+store_group+e54cc060-65ed-4a40-b8e6-7789ee9a1044
+2022-06-28 15:13:28.912 [main] INFO, c.a.n.client.config.impl.CacheData: [config_rpc_client] [add-listener] ok, tenant=e54cc060-65ed-4a40-b8e6-7789ee9a1044, dataId=seata-store.yml, group=store_group, cnt=1
+2022-06-28 15:13:28.912 [main] INFO, c.a.n.c.config.impl.ClientWorker: [config_rpc_client] [subscribe] seata-store+store_group+e54cc060-65ed-4a40-b8e6-7789ee9a1044
+2022-06-28 15:13:28.912 [main] INFO, c.a.n.client.config.impl.CacheData: [config_rpc_client] [add-listener] ok, tenant=e54cc060-65ed-4a40-b8e6-7789ee9a1044, dataId=seata-store, group=store_group, cnt=1
+2022-06-28 15:26:32.066 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:26:33.811 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:26:34.506 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=48e2ed4c-7730-3439-ba3b-a1ad344e07c2
+2022-06-28 15:26:34.529 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$abfefa91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.538 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.566 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.570 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.572 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.572 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 15:26:34.608 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 15:26:34.613 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.621 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:34.932 [main] INFO, org.reflections.Reflections: Reflections took 30 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:26:34.976 [main] INFO, org.reflections.Reflections: Reflections took 29 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:26:34.991 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:26:35.114 [main] INFO, org.reflections.Reflections: Reflections took 120 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:26:35.126 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:26:35.145 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:26:35.161 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:26:35.287 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:26:38.739 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 15:26:38.850 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:26:38.850 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:26:38.863 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 15:26:38.864 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 15:26:38.870 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:26:38.870 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:26:38.870 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 15:26:38.948 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:38.950 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:26:39.137 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:26:39.146 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:26:39.146 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:26:39.146 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:26:39.245 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:26:39.246 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 5407 ms
+2022-06-28 15:26:39.410 [main] INFO, i.s.s.a.d.SeataAutoDataSourceProxyCreator: Auto proxy of [druidDataSource]
+2022-06-28 15:26:39.796 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:26:41.296 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:26:44.151 [main] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 15:26:44.660 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:26:44.676 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 15:26:44.687 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 15:26:46.089 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 16.028 seconds (JVM running for 18.038)
+2022-06-28 15:34:16.911 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:34:18.764 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:34:19.427 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=48e2ed4c-7730-3439-ba3b-a1ad344e07c2
+2022-06-28 15:34:19.449 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$abfefa91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.458 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.493 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.497 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.499 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.500 [main] INFO, i.s.s.b.a.SeataAutoConfiguration: Automatically configure Seata
+2022-06-28 15:34:19.534 [main] INFO, io.seata.config.ConfigurationFactory: load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2022-06-28 15:34:19.539 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.545 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:19.901 [main] INFO, org.reflections.Reflections: Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:34:19.942 [main] INFO, org.reflections.Reflections: Reflections took 24 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:34:19.957 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:34:20.179 [main] INFO, org.reflections.Reflections: Reflections took 219 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:34:20.194 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:34:20.209 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:34:20.230 [main] INFO, org.reflections.Reflections: Reflections took 17 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:34:20.340 [main] INFO, org.reflections.Reflections: Reflections took 108 ms to scan 134 urls, producing 0 keys and 0 values 
+2022-06-28 15:34:23.854 [main] INFO, i.s.s.a.GlobalTransactionScanner: Initializing Global Transaction Clients ... 
+2022-06-28 15:34:23.999 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:34:23.999 [main] INFO, i.s.s.a.GlobalTransactionScanner: Transaction Manager Client is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:34:24.014 [main] INFO, io.seata.rm.datasource.AsyncWorker: Async Commit Buffer Limit: 10000
+2022-06-28 15:34:24.014 [main] INFO, i.s.r.d.xa.ResourceManagerXA: ResourceManagerXA init ...
+2022-06-28 15:34:24.020 [main] INFO, i.s.c.rpc.netty.NettyClientBootstrap: NettyClientBootstrap has started
+2022-06-28 15:34:24.020 [main] INFO, i.s.s.a.GlobalTransactionScanner: Resource Manager is initialized. applicationId[seata-store] txServiceGroup[seata-store-tx-group]
+2022-06-28 15:34:24.020 [main] INFO, i.s.s.a.GlobalTransactionScanner: Global Transaction Clients are initialized. 
+2022-06-28 15:34:24.112 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:24.114 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:34:24.331 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:34:24.439 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:34:24.440 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:34:24.441 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:34:24.573 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:34:24.573 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 5795 ms
+2022-06-28 15:34:24.768 [main] INFO, i.s.s.a.d.SeataAutoDataSourceProxyCreator: Auto proxy of [druidDataSource]
+2022-06-28 15:34:25.222 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:34:26.699 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:34:29.792 [main] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 15:34:30.313 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:34:30.324 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 15:34:30.334 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 15:34:31.649 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 17.044 seconds (JVM running for 18.926)
+2022-06-28 15:36:35.009 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:36:35.016 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 15:36:35.021 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 15:36:35.365 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:36:35.365 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 15:36:35.375 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 15:39:41.268 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:39:43.090 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:39:43.997 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=b4a44465-508c-3c02-8f28-a1e3b8b8b61e
+2022-06-28 15:39:44.689 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:39:44.692 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:39:45.676 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:39:45.760 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:39:45.761 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:39:45.762 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:39:45.895 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:39:45.895 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2789 ms
+2022-06-28 15:39:46.730 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:39:48.351 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:39:51.360 [main] INFO, org.reflections.Reflections: Reflections took 50 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:39:51.394 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:39:51.409 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:39:51.540 [main] INFO, org.reflections.Reflections: Reflections took 128 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 15:39:51.552 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:39:51.568 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:39:51.586 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:39:51.736 [main] INFO, org.reflections.Reflections: Reflections took 144 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 15:39:55.422 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:39:55.458 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 15:39:55.471 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 15:39:56.780 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 18.173 seconds (JVM running for 22.281)
+2022-06-28 15:40:05.946 [http-nio-7001-exec-1] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 15:40:05.947 [http-nio-7001-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 15:40:05.948 [http-nio-7001-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 15:41:09.274 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:41:09.283 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 15:41:09.287 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 15:41:09.641 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:41:09.642 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-0} closing ...
+2022-06-28 15:41:19.593 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 15:41:21.380 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 15:41:22.090 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=b4a44465-508c-3c02-8f28-a1e3b8b8b61e
+2022-06-28 15:41:22.175 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:41:22.178 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 15:41:22.354 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 15:41:22.362 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:41:22.362 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 15:41:22.362 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 15:41:22.501 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 15:41:22.501 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1105 ms
+2022-06-28 15:41:23.015 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 15:41:24.385 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:41:26.939 [main] INFO, org.reflections.Reflections: Reflections took 31 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 15:41:26.971 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 15:41:26.989 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 15:41:27.121 [main] INFO, org.reflections.Reflections: Reflections took 129 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 15:41:27.133 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 15:41:27.148 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 15:41:27.163 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 15:41:27.325 [main] INFO, org.reflections.Reflections: Reflections took 160 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 15:41:31.781 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 15:41:31.792 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 15:41:31.804 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 15:41:33.477 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 15.874 seconds (JVM running for 17.637)
+2022-06-28 15:41:36.498 [http-nio-7001-exec-1] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 15:41:36.498 [http-nio-7001-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 15:41:36.501 [http-nio-7001-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 3 ms
+2022-06-28 15:42:06.845 [http-nio-7001-exec-2] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 15:42:35.678 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 15:42:35.684 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 15:42:35.688 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 16:00:32.419 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:00:34.095 [main] INFO, com.lzy.seata.UserApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:00:34.690 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=bd9a2d1b-b734-388e-bad3-a067f7517f22
+2022-06-28 16:00:34.774 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:00:34.777 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:00:34.943 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7002 (http)
+2022-06-28 16:00:34.952 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:00:34.952 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:00:34.953 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:00:35.044 [main] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:00:35.044 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 935 ms
+2022-06-28 16:00:35.559 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:00:36.960 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:00:39.371 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:00:39.400 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:00:39.414 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:00:39.541 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:00:39.554 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:00:39.569 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:00:39.583 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:00:39.728 [main] INFO, org.reflections.Reflections: Reflections took 143 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:00:43.036 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:00:43.046 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7002 (http) with context path '/seata-user'
+2022-06-28 16:00:43.057 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-user 192.168.9.146:7002 register finished
+2022-06-28 16:00:44.366 [main] INFO, com.lzy.seata.UserApplication: Started UserApplication in 14.182 seconds (JVM running for 16.587)
+2022-06-28 16:02:15.175 [http-nio-7002-exec-1] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:02:15.176 [http-nio-7002-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:02:15.177 [http-nio-7002-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 16:02:15.722 [http-nio-7002-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 16:03:04.358 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:03:04.367 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 16:03:04.371 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 16:03:04.724 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:03:04.725 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 16:03:04.735 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 16:03:12.426 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:03:14.087 [main] INFO, com.lzy.seata.UserApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:03:14.695 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=bd9a2d1b-b734-388e-bad3-a067f7517f22
+2022-06-28 16:03:14.780 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:03:14.783 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:03:14.946 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7002 (http)
+2022-06-28 16:03:14.954 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:03:14.955 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:03:14.955 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:03:15.047 [main] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:03:15.047 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 946 ms
+2022-06-28 16:03:15.552 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:03:16.955 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:03:19.360 [main] INFO, org.reflections.Reflections: Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:03:19.388 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:03:19.404 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:03:19.530 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:03:19.543 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:03:19.557 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:03:19.571 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:03:19.728 [main] INFO, org.reflections.Reflections: Reflections took 155 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:03:23.003 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:03:23.013 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7002 (http) with context path '/seata-user'
+2022-06-28 16:03:23.025 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-user 192.168.9.146:7002 register finished
+2022-06-28 16:03:24.323 [main] INFO, com.lzy.seata.UserApplication: Started UserApplication in 13.911 seconds (JVM running for 15.831)
+2022-06-28 16:03:44.183 [http-nio-7002-exec-1] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:03:44.184 [http-nio-7002-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:03:44.185 [http-nio-7002-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 16:03:44.734 [http-nio-7002-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 16:04:16.796 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:04:16.803 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 16:04:16.807 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 16:04:17.152 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:04:17.153 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 16:04:17.165 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 16:43:39.003 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:43:40.986 [main] INFO, com.lzy.seata.UserApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:43:41.713 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=bd9a2d1b-b734-388e-bad3-a067f7517f22
+2022-06-28 16:43:41.810 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:43:41.813 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:43:42.007 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7002 (http)
+2022-06-28 16:43:42.018 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:43:42.019 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:43:42.019 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:43:42.308 [main] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:43:42.308 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1304 ms
+2022-06-28 16:43:43.078 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:43:44.665 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:43:47.753 [main] INFO, org.reflections.Reflections: Reflections took 72 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:43:47.791 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:43:47.806 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:43:47.937 [main] INFO, org.reflections.Reflections: Reflections took 127 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:43:47.951 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:43:47.968 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:43:47.986 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:43:48.123 [main] INFO, org.reflections.Reflections: Reflections took 134 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:43:52.253 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7002"]
+2022-06-28 16:43:52.274 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7002 (http) with context path '/seata-user'
+2022-06-28 16:43:52.288 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-user 192.168.9.146:7002 register finished
+2022-06-28 16:43:53.649 [main] INFO, com.lzy.seata.UserApplication: Started UserApplication in 16.964 seconds (JVM running for 18.943)
+2022-06-28 16:44:12.573 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:44:14.281 [main] INFO, com.lzy.seata.StoreApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:44:14.999 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=b4a44465-508c-3c02-8f28-a1e3b8b8b61e
+2022-06-28 16:44:15.088 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:44:15.091 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:44:15.270 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7001 (http)
+2022-06-28 16:44:15.278 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7001"]
+2022-06-28 16:44:15.279 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:44:15.279 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:44:15.374 [main] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:44:15.374 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1078 ms
+2022-06-28 16:44:15.913 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:44:17.344 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:44:19.984 [main] INFO, org.reflections.Reflections: Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:44:20.012 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:44:20.026 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:44:20.153 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:44:20.166 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:44:20.182 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:44:20.196 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:44:20.349 [main] INFO, org.reflections.Reflections: Reflections took 150 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:44:23.858 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7001"]
+2022-06-28 16:44:23.868 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7001 (http) with context path '/seata-store'
+2022-06-28 16:44:23.881 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-store 192.168.9.146:7001 register finished
+2022-06-28 16:44:25.180 [main] INFO, com.lzy.seata.StoreApplication: Started StoreApplication in 14.685 seconds (JVM running for 16.388)
+2022-06-28 16:45:10.902 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:45:12.669 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:45:13.328 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 16:45:13.414 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:45:13.417 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:45:13.591 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 16:45:13.600 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 16:45:13.601 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:45:13.601 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:45:13.700 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:45:13.701 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1017 ms
+2022-06-28 16:45:15.222 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:45:16.730 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:45:18.675 [main] INFO, org.reflections.Reflections: Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:45:18.706 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:45:18.721 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:45:18.847 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:45:18.860 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:45:18.875 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:45:18.896 [main] INFO, org.reflections.Reflections: Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:45:19.059 [main] INFO, org.reflections.Reflections: Reflections took 159 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:45:22.422 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 16:45:22.432 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 16:45:22.442 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 16:45:23.766 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 15.129 seconds (JVM running for 17.112)
+2022-06-28 16:46:08.782 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:46:08.783 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:46:08.784 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 16:46:08.862 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 16:48:41.127 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:48:41.132 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 16:48:41.140 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 16:48:41.492 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:48:41.501 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-0} closing ...
+2022-06-28 16:48:51.320 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 16:48:53.110 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 16:48:53.725 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 16:48:53.808 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:48:53.811 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 16:48:53.985 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 16:48:53.992 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 16:48:53.993 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 16:48:53.993 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 16:48:54.089 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 16:48:54.090 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 966 ms
+2022-06-28 16:48:55.565 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 16:48:56.921 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 16:48:58.412 [main] INFO, org.reflections.Reflections: Reflections took 31 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 16:48:58.440 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 16:48:58.455 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 16:48:58.580 [main] INFO, org.reflections.Reflections: Reflections took 123 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:48:58.593 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 16:48:58.608 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 16:48:58.624 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 16:48:58.758 [main] INFO, org.reflections.Reflections: Reflections took 132 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 16:49:01.908 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 16:49:01.918 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 16:49:01.929 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 16:49:03.175 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 13.813 seconds (JVM running for 15.385)
+2022-06-28 16:49:13.651 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:49:13.651 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:49:13.652 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 16:49:13.712 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 16:49:13.866 [http-nio-7001-exec-3] INFO, o.a.c.c.C.[.[.[/seata-store]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:49:13.867 [http-nio-7001-exec-3] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:49:13.868 [http-nio-7001-exec-3] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 16:49:14.491 [http-nio-7001-exec-3] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 16:49:14.708 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 16:49:14.708 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 16:49:14.809 [http-nio-7002-exec-2] INFO, o.a.c.c.C.[.[.[/seata-user]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 16:49:14.810 [http-nio-7002-exec-2] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 16:49:14.812 [http-nio-7002-exec-2] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 2 ms
+2022-06-28 16:49:15.379 [http-nio-7002-exec-2] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 16:49:15.552 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 16:49:15.552 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 16:49:16.060 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 17:00:18.363 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:00:18.369 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 17:00:18.372 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 17:00:18.705 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:00:18.712 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 17:00:18.718 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 17:00:25.094 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 17:00:26.768 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 17:00:27.382 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 17:00:27.466 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:00:27.469 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:00:27.632 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 17:00:27.640 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:00:27.640 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 17:00:27.640 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 17:00:27.728 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 17:00:27.728 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 943 ms
+2022-06-28 17:00:29.192 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:00:30.588 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:00:32.147 [main] INFO, org.reflections.Reflections: Reflections took 31 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 17:00:32.175 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 17:00:32.190 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 17:00:32.315 [main] INFO, org.reflections.Reflections: Reflections took 123 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:00:32.327 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 17:00:32.340 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 17:00:32.354 [main] INFO, org.reflections.Reflections: Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 17:00:32.495 [main] INFO, org.reflections.Reflections: Reflections took 139 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:00:35.755 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:00:35.765 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 17:00:35.777 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 17:00:37.069 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 14.225 seconds (JVM running for 16.411)
+2022-06-28 17:01:52.279 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:01:52.284 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 17:01:52.288 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 17:01:52.635 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:01:52.643 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-0} closing ...
+2022-06-28 17:02:00.138 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 17:02:01.806 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 17:02:02.409 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 17:02:02.492 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:02:02.495 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:02:02.664 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 17:02:02.672 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:02:02.672 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 17:02:02.672 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 17:02:02.765 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 17:02:02.765 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 946 ms
+2022-06-28 17:02:04.228 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:02:05.632 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:02:07.171 [main] INFO, org.reflections.Reflections: Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 17:02:07.200 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 17:02:07.215 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 17:02:07.342 [main] INFO, org.reflections.Reflections: Reflections took 125 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:02:07.354 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 17:02:07.368 [main] INFO, org.reflections.Reflections: Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 17:02:07.385 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 17:02:07.521 [main] INFO, org.reflections.Reflections: Reflections took 133 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:02:10.795 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:02:10.805 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 17:02:10.816 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 17:02:12.176 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 13.998 seconds (JVM running for 15.917)
+2022-06-28 17:02:44.410 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 17:02:44.410 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 17:02:44.412 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 2 ms
+2022-06-28 17:02:44.478 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 17:02:44.663 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 17:02:44.663 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 17:02:44.713 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 17:02:44.713 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 17:02:45.264 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 17:07:14.052 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:07:14.057 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 17:07:14.061 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 17:07:14.398 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:07:14.404 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 17:07:14.410 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 17:07:20.464 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 17:07:22.258 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 17:07:22.912 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 17:07:23.000 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:07:23.002 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:07:23.178 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 17:07:23.196 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:07:23.197 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 17:07:23.197 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 17:07:23.304 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 17:07:23.304 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1029 ms
+2022-06-28 17:07:24.997 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:07:26.494 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:07:28.085 [main] INFO, org.reflections.Reflections: Reflections took 34 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 17:07:28.116 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 17:07:28.131 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 17:07:28.264 [main] INFO, org.reflections.Reflections: Reflections took 130 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:07:28.278 [main] INFO, org.reflections.Reflections: Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 17:07:28.296 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 17:07:28.313 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 17:07:28.460 [main] INFO, org.reflections.Reflections: Reflections took 145 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:07:31.941 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:07:31.949 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 17:07:31.962 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 17:07:33.340 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 14.993 seconds (JVM running for 16.584)
+2022-06-28 17:07:38.213 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 17:07:38.213 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 17:07:38.214 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 17:07:38.279 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 17:07:38.589 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 17:07:38.589 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 17:07:38.631 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 17:07:38.631 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 17:07:39.201 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-06-28 17:32:50.738 [http-nio-7003-exec-5] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 17:32:50.758 [http-nio-7003-exec-5] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 17:32:50.758 [http-nio-7003-exec-5] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 17:32:50.780 [http-nio-7003-exec-5] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 17:32:50.780 [http-nio-7003-exec-5] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 17:54:19.569 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:54:19.575 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registering from Nacos Server now...
+2022-06-28 17:54:19.580 [SpringContextShutdownHook] INFO, c.a.c.n.r.NacosServiceRegistry: De-registration finished.
+2022-06-28 17:54:19.917 [SpringContextShutdownHook] INFO, o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:54:19.955 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closing ...
+2022-06-28 17:54:19.963 [SpringContextShutdownHook] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} closed
+2022-06-28 17:54:30.082 [background-preinit] INFO, o.h.validator.internal.util.Version: HV000001: Hibernate Validator 6.1.7.Final
+2022-06-28 17:54:31.851 [main] INFO, com.lzy.seata.OrderApplication: No active profile set, falling back to default profiles: default
+2022-06-28 17:54:32.464 [main] INFO, o.s.cloud.context.scope.GenericScope: BeanFactory id=393076c2-2479-3e75-9cad-568063d06362
+2022-06-28 17:54:32.551 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:54:32.554 [main] INFO, o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-28 17:54:32.734 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 7003 (http)
+2022-06-28 17:54:32.742 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:54:32.743 [main] INFO, o.a.catalina.core.StandardService: Starting service [Tomcat]
+2022-06-28 17:54:32.743 [main] INFO, o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-28 17:54:32.854 [main] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring embedded WebApplicationContext
+2022-06-28 17:54:32.854 [main] INFO, o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 987 ms
+2022-06-28 17:54:34.602 [main] INFO, o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-28 17:54:36.005 [main] INFO, o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-06-28 17:54:37.549 [main] INFO, org.reflections.Reflections: Reflections took 31 ms to scan 1 urls, producing 3 keys and 6 values 
+2022-06-28 17:54:37.578 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2022-06-28 17:54:37.595 [main] INFO, org.reflections.Reflections: Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2022-06-28 17:54:37.721 [main] INFO, org.reflections.Reflections: Reflections took 124 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:54:37.738 [main] INFO, org.reflections.Reflections: Reflections took 16 ms to scan 1 urls, producing 1 keys and 5 values 
+2022-06-28 17:54:37.755 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+2022-06-28 17:54:37.773 [main] INFO, org.reflections.Reflections: Reflections took 15 ms to scan 1 urls, producing 2 keys and 8 values 
+2022-06-28 17:54:37.897 [main] INFO, org.reflections.Reflections: Reflections took 122 ms to scan 138 urls, producing 0 keys and 0 values 
+2022-06-28 17:54:41.329 [main] INFO, o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-7003"]
+2022-06-28 17:54:41.342 [main] INFO, o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 7003 (http) with context path '/seata-order'
+2022-06-28 17:54:41.355 [main] INFO, c.a.c.n.r.NacosServiceRegistry: nacos registry, DEFAULT_GROUP seata-order 192.168.9.146:7003 register finished
+2022-06-28 17:54:42.663 [main] INFO, com.lzy.seata.OrderApplication: Started OrderApplication in 14.597 seconds (JVM running for 16.17)
+2022-06-28 17:54:47.858 [http-nio-7003-exec-1] INFO, o.a.c.c.C.[.[.[/seata-order]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-28 17:54:47.858 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2022-06-28 17:54:47.859 [http-nio-7003-exec-1] INFO, o.s.web.servlet.DispatcherServlet: Completed initialization in 1 ms
+2022-06-28 17:54:47.926 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存开始....................
+2022-06-28 17:54:48.102 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣库存结束....................0
+2022-06-28 17:54:48.102 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额开始....................
+2022-06-28 17:54:48.148 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 扣余额结束....................0
+2022-06-28 17:54:48.148 [http-nio-7003-exec-1] INFO, c.l.seata.service.impl.ATServiceImpl: 创建订单....................
+2022-06-28 17:54:48.771 [http-nio-7003-exec-1] INFO, c.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
