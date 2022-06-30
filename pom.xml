@@ -12,6 +12,8 @@
         <module>store</module>
         <module>order</module>
         <module>user</module>
+        <module>transaction-record</module>
+        <module>common</module>
     </modules>
 
     <properties>
