@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.lzy.seata.entity.Order">
     <constructor>
       <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="order_id" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="product_id" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="num" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="user_id" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -12,7 +13,7 @@
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    id, product_id, num, user_id, create_time, status
+    id, order_id, product_id, num, user_id, create_time, status
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -25,18 +26,21 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.lzy.seata.entity.Order">
-    insert into `order` (id, product_id, num,
-      user_id, create_time, status
-      )
-    values (#{id,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT}, #{num,jdbcType=BIGINT},
-      #{userId,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}
-      )
+    insert into `order` (id, order_id, product_id,
+      num, user_id, create_time, 
+      status)
+    values (#{id,jdbcType=BIGINT}, #{orderId,jdbcType=VARCHAR}, #{productId,jdbcType=BIGINT}, 
+      #{num,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{status,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.lzy.seata.entity.Order">
     insert into `order`
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
+      </if>
+      <if test="orderId != null">
+        order_id,
       </if>
       <if test="productId != null">
         product_id,
@@ -58,6 +62,9 @@
       <if test="id != null">
         #{id,jdbcType=BIGINT},
       </if>
+      <if test="orderId != null">
+        #{orderId,jdbcType=VARCHAR},
+      </if>
       <if test="productId != null">
         #{productId,jdbcType=BIGINT},
       </if>
@@ -78,6 +85,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.lzy.seata.entity.Order">
     update order
     <set>
+      <if test="orderId != null">
+        order_id = #{orderId,jdbcType=VARCHAR},
+      </if>
       <if test="productId != null">
         product_id = #{productId,jdbcType=BIGINT},
       </if>
@@ -98,7 +108,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.lzy.seata.entity.Order">
     update order
-    set product_id = #{productId,jdbcType=BIGINT},
+    set order_id = #{orderId,jdbcType=VARCHAR},
+      product_id = #{productId,jdbcType=BIGINT},
       num = #{num,jdbcType=BIGINT},
       user_id = #{userId,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},

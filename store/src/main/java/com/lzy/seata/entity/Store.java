@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 public class Store {
     private Long id;
 
+    private Long productId;
+
     private String name;
 
     private Long num;
@@ -13,12 +15,16 @@ public class Store {
 
     private Long price;
 
-    public Store(Long id, String name, Long num, LocalDateTime createTime, Long price) {
+    private Long frozen;
+
+    public Store(Long id, Long productId, String name, Long num, LocalDateTime createTime, Long price, Long frozen) {
         this.id = id;
+        this.productId = productId;
         this.name = name;
         this.num = num;
         this.createTime = createTime;
         this.price = price;
+        this.frozen = frozen;
     }
 
     public Store() {
@@ -31,6 +37,14 @@ public class Store {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Long productId) {
+        this.productId = productId;
     }
 
     public String getName() {
@@ -63,5 +77,13 @@ public class Store {
 
     public void setPrice(Long price) {
         this.price = price;
+    }
+
+    public Long getFrozen() {
+        return frozen;
+    }
+
+    public void setFrozen(Long frozen) {
+        this.frozen = frozen;
     }
 }

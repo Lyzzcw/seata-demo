@@ -1,9 +1,7 @@
 package com.lzy.seata.mapper;
 
 import com.lzy.seata.entity.User;
-import org.apache.ibatis.annotations.Mapper;
 
-@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Long id);
 

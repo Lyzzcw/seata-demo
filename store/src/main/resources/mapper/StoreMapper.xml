@@ -4,14 +4,16 @@
   <resultMap id="BaseResultMap" type="com.lzy.seata.entity.Store">
     <constructor>
       <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="product_id" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="num" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
       <arg column="price" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="frozen" javaType="java.lang.Long" jdbcType="BIGINT" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    id, name, num, create_time, price
+    id, product_id, name, num, create_time, price, frozen
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -24,16 +26,21 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.lzy.seata.entity.Store">
-    insert into store (id, name, num, 
-      create_time, price)
-    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{num,jdbcType=BIGINT}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{price,jdbcType=BIGINT})
+    insert into store (id, product_id, name, 
+      num, create_time, price, 
+      frozen)
+    values (#{id,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{num,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, #{price,jdbcType=BIGINT}, 
+      #{frozen,jdbcType=BIGINT})
   </insert>
   <insert id="insertSelective" parameterType="com.lzy.seata.entity.Store">
     insert into store
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
+      </if>
+      <if test="productId != null">
+        product_id,
       </if>
       <if test="name != null">
         name,
@@ -47,10 +54,16 @@
       <if test="price != null">
         price,
       </if>
+      <if test="frozen != null">
+        frozen,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=BIGINT},
+      </if>
+      <if test="productId != null">
+        #{productId,jdbcType=BIGINT},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
@@ -64,11 +77,17 @@
       <if test="price != null">
         #{price,jdbcType=BIGINT},
       </if>
+      <if test="frozen != null">
+        #{frozen,jdbcType=BIGINT},
+      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.lzy.seata.entity.Store">
     update store
     <set>
+      <if test="productId != null">
+        product_id = #{productId,jdbcType=BIGINT},
+      </if>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
@@ -81,15 +100,20 @@
       <if test="price != null">
         price = #{price,jdbcType=BIGINT},
       </if>
+      <if test="frozen != null">
+        frozen = #{frozen,jdbcType=BIGINT},
+      </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.lzy.seata.entity.Store">
     update store
-    set name = #{name,jdbcType=VARCHAR},
+    set product_id = #{productId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
       num = #{num,jdbcType=BIGINT},
       create_time = #{createTime,jdbcType=TIMESTAMP},
-      price = #{price,jdbcType=BIGINT}
+      price = #{price,jdbcType=BIGINT},
+      frozen = #{frozen,jdbcType=BIGINT}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

@@ -1,12 +1,36 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 本地Mysql
+ Source Server Type    : MySQL
+ Source Server Version : 50645
+ Source Host           : localhost:3306
+ Source Schema         : seata_user
+
+ Target Server Type    : MySQL
+ Target Server Version : 50645
+ File Encoding         : 65001
+
+ Date: 09/01/2022 17:44:24
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
                             `id` bigint(11) NOT NULL,
                             `user_id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '用户userId',
                             `money` bigint(11) NULL DEFAULT NULL COMMENT '余额，单位分',
+                            `frozen` bigint(11) NULL DEFAULT NULL COMMENT '冻结金额，单位分',
                             `create_time` datetime(0) NULL DEFAULT NULL,
                             PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
 
-INSERT INTO `user` VALUES (1, 'lzzzz', 1000, '2021-10-19 17:49:53');
+INSERT INTO `user` VALUES (1, 'lzzzz', 100000,0, '2021-10-19 17:49:53');
 
 CREATE TABLE `undo_log`  (
                              `branch_id` bigint(20) NOT NULL COMMENT 'branch transaction id',

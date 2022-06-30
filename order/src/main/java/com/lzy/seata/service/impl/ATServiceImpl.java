@@ -7,6 +7,7 @@ import com.lzy.seata.mapper.OrderMapper;
 import com.lzy.seata.openfeign.StoreFeignService;
 import com.lzy.seata.openfeign.UserFeignService;
 import com.lzy.seata.service.ATService;
+import com.lzy.seata.util.NanoIdUtils;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,11 @@ public class ATServiceImpl implements ATService {
 
     /**
      * 下订单的接口就是一个事务发起方，作为TM，需要发起一个全局事务
+     *
+     * 但是AT模式有局限性，如下：
+     *
+     * 性能低，锁定资源时间太长
+     * 无法解决跨应用的事务
      */
     @GlobalTransactional
     @Override
@@ -57,6 +63,7 @@ public class ATServiceImpl implements ATService {
         log.info("创建订单....................");
         Order order = Order.builder()
                 .userId(userId)
+                .orderId(NanoIdUtils.randomNanoId())
                 .createTime(LocalDateTime.now())
                 .num(num)
                 .productId(productId)

@@ -10,9 +10,9 @@ spring:
     name: seata-user
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seata-user?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://101.43.246.168:3306/seata-user?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
-    password: eslink
+    password: LZlz71370010
     type: com.alibaba.druid.pool.DruidDataSource
   cloud:
     nacos:

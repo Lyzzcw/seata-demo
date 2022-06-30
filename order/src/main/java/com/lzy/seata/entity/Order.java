@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 public class Order {
     private Long id;
 
+    private String orderId;
+
     private Long productId;
 
     private Long num;
@@ -18,8 +20,9 @@ public class Order {
 
     private Integer status;
 
-    public Order(Long id, Long productId, Long num, String userId, LocalDateTime createTime, Integer status) {
+    public Order(Long id, String orderId, Long productId, Long num, String userId, LocalDateTime createTime, Integer status) {
         this.id = id;
+        this.orderId = orderId;
         this.productId = productId;
         this.num = num;
         this.userId = userId;
@@ -37,6 +40,14 @@ public class Order {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId == null ? null : orderId.trim();
     }
 
     public Long getProductId() {

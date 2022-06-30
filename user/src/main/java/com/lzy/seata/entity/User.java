@@ -9,12 +9,15 @@ public class User {
 
     private Long money;
 
+    private Long frozen;
+
     private LocalDateTime createTime;
 
-    public User(Long id, String userId, Long money, LocalDateTime createTime) {
+    public User(Long id, String userId, Long money, Long frozen, LocalDateTime createTime) {
         this.id = id;
         this.userId = userId;
         this.money = money;
+        this.frozen = frozen;
         this.createTime = createTime;
     }
 
@@ -44,6 +47,14 @@ public class User {
 
     public void setMoney(Long money) {
         this.money = money;
+    }
+
+    public Long getFrozen() {
+        return frozen;
+    }
+
+    public void setFrozen(Long frozen) {
+        this.frozen = frozen;
     }
 
     public LocalDateTime getCreateTime() {

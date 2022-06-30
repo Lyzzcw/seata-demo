@@ -6,11 +6,12 @@
       <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="user_id" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="money" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="frozen" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    id, user_id, money, create_time
+    id, user_id, money, frozen, create_time
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -24,9 +25,9 @@
   </delete>
   <insert id="insert" parameterType="com.lzy.seata.entity.User">
     insert into user (id, user_id, money, 
-      create_time)
+      frozen, create_time)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{money,jdbcType=BIGINT}, 
-      #{createTime,jdbcType=TIMESTAMP})
+      #{frozen,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.lzy.seata.entity.User">
     insert into user
@@ -39,6 +40,9 @@
       </if>
       <if test="money != null">
         money,
+      </if>
+      <if test="frozen != null">
+        frozen,
       </if>
       <if test="createTime != null">
         create_time,
@@ -54,6 +58,9 @@
       <if test="money != null">
         #{money,jdbcType=BIGINT},
       </if>
+      <if test="frozen != null">
+        #{frozen,jdbcType=BIGINT},
+      </if>
       <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
@@ -68,6 +75,9 @@
       <if test="money != null">
         money = #{money,jdbcType=BIGINT},
       </if>
+      <if test="frozen != null">
+        frozen = #{frozen,jdbcType=BIGINT},
+      </if>
       <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
@@ -78,13 +88,15 @@
     update user
     set user_id = #{userId,jdbcType=VARCHAR},
       money = #{money,jdbcType=BIGINT},
+      frozen = #{frozen,jdbcType=BIGINT},
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
   <select id="selectByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from user
-    where user_Id = #{userId,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=BIGINT}
   </select>
 </mapper>
