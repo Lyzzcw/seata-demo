@@ -1,5 +1,6 @@
 package com.lzy.seata.service.impl;
 
+import com.lzy.seata.constant.FeignCodes;
 import com.lzy.seata.entity.Result;
 import com.lzy.seata.entity.TransactionRecord;
 import com.lzy.seata.mapper.TransactionRecordMapper;
@@ -26,14 +27,18 @@ public class TransactionRecordServiceImpl implements TransactionRecordService {
     public Result<TransactionRecord> add(TransactionRecord record) {
         //保证幂等性
         TransactionRecord res = transactionRecordMapper.findByXid(record.getXid());
-        if (Objects.nonNull(res))
-            return Result.resultSuccess("200","请求成功",res);
+        if (Objects.nonNull(res)) {
+            return Result.resultSuccess(FeignCodes.SUCCESS.getStatus(),
+                    FeignCodes.SUCCESS.getMsg(),res);
+        }
         transactionRecordMapper.insert(record);
-        return Result.resultSuccess("200","请求成功",record);
+        return Result.resultSuccess(FeignCodes.SUCCESS.getStatus(),
+                FeignCodes.SUCCESS.getMsg(),record);
     }
 
     @Override
     public Result<TransactionRecord> getByXid(String xid) {
-        return Result.resultSuccess("200","请求成功",transactionRecordMapper.findByXid(xid));
+        return Result.resultSuccess(FeignCodes.SUCCESS.getStatus(),
+                FeignCodes.SUCCESS.getMsg(),transactionRecordMapper.findByXid(xid));
     }
 }

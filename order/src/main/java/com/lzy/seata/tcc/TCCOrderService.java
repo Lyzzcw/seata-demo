@@ -31,7 +31,8 @@ public interface TCCOrderService {
     @TwoPhaseBusinessAction(name = "orderTcc",commitMethod = "commit",rollbackMethod = "cancel")
     boolean tryCreate(BusinessActionContext businessActionContext,
                       @BusinessActionContextParameter(paramName = "userId") String userId,
-                      @BusinessActionContextParameter(paramName = "productId") String productId,
+                      @BusinessActionContextParameter(paramName = "productId") Long productId,
+                      @BusinessActionContextParameter(paramName = "orderId") String orderId,
                       @BusinessActionContextParameter(paramName = "num") Long num);
 
     /*
