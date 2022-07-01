@@ -1,5 +1,7 @@
 package com.lzy.seata.service.impl;
 
+import com.lzy.seata.constant.FeignCodes;
+import com.lzy.seata.entity.Result;
 import com.lzy.seata.entity.Store;
 import com.lzy.seata.mapper.StoreMapper;
 import com.lzy.seata.service.ATService;
@@ -8,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
+import java.util.Objects;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,15 +27,17 @@ public class ATServiceImpl implements ATService {
 
     @Transactional
     @Override
-    public void deduct(Long id, Long num) {
+    public String deduct(Long id, Long num) {
         Store store = storeMapper.selectByPrimaryKey(id);
         Assert.notNull(store,"物品不存在");
         store.setNum(store.getNum() - num);
         storeMapper.updateByPrimaryKey(store);
+        return FeignCodes.SUCCESS.getStatus();
     }
 
     @Override
     public Store detail(Long id) {
         return storeMapper.selectByPrimaryKey(id);
     }
+    
 }

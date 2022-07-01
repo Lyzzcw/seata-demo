@@ -15,7 +15,8 @@ public interface ATService {
      * @param id
      * @param num
      */
-    void deduct(Long id,Long num);
+    String deduct(Long id,Long num);
 
     Store detail(Long id);
+
 }

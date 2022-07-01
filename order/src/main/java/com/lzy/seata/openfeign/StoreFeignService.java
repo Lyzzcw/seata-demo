@@ -16,8 +16,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface StoreFeignService {
 
     @PostMapping("/seata-store/deduct")
-    int deduct(@RequestParam("id") Long id,@RequestParam("num") Long num);
+    String deduct(@RequestParam("id") Long id,@RequestParam("num") Long num);
 
     @PostMapping("/seata-store/detail")
     Store detail(@RequestParam("id") Long id);
+
+    @PostMapping("/seata-store/frozen")
+    String frozen(@RequestParam("productId") Long productId,@RequestParam("num") Long num);
+
+    @PostMapping("/seata-store/cancelFrozen")
+    String cancelFrozen(@RequestParam("productId") Long productId,@RequestParam("num") Long num);
+
+    @PostMapping("/seata-store/commitFrozen")
+    String commitFrozen(@RequestParam("productId") Long productId,@RequestParam("num") Long num);
 }

@@ -50,14 +50,14 @@ public class ATServiceImpl implements ATService {
     public int create(String userId, Long productId, Long num) {
         //1.扣减库存
         log.info("扣库存开始....................");
-        int result_store = storeFeignService.deduct(productId,num);
+        String result_store = storeFeignService.deduct(productId,num);
         log.info("扣库存结束...................."+result_store);
 
 
         //2.扣减余额
         log.info("扣余额开始....................");
         Store store = storeFeignService.detail(productId);
-        int result_user = userFeignService.deduct(userId,store.getPrice()*num);
+        String result_user = userFeignService.deduct(userId,store.getPrice()*num);
         log.info("扣余额结束...................."+result_user);
 
         //3.创建订单

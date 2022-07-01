@@ -5,7 +5,6 @@ import com.lzy.seata.service.ATService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,18 +22,13 @@ public class ATController {
     private ATService atService;
 
     @PostMapping("deduct")
-    public int deduct(@RequestParam("id") Long id,@RequestParam("num") Long num){
-        try {
-            atService.deduct(id,num);
-            return 0;
-        }catch (Exception e){
-            log.error("扣出库存失败",e);
-            return -1;
-        }
+    public String deduct(@RequestParam("id") Long id,@RequestParam("num") Long num){
+        return atService.deduct(id,num);
     }
 
     @PostMapping("detail")
     public Store detail(@RequestParam("id") Long id){
         return atService.detail(id);
     }
+
 }

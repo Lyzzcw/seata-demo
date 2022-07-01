@@ -1,5 +1,8 @@
 package com.lzy.seata.entity;
 
+import lombok.Builder;
+
+@Builder
 public class TransactionRecord {
     private Long id;
 

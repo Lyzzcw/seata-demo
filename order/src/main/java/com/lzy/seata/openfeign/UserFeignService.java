@@ -15,5 +15,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UserFeignService {
 
     @PostMapping("/seata-user/deduct")
-    int deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money);
+    String deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money);
 }

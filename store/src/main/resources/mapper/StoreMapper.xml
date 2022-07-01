@@ -116,4 +116,11 @@
       frozen = #{frozen,jdbcType=BIGINT}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="findByProductId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from store
+    where product_id = #{productId,jdbcType=BIGINT}
+  </select>
 </mapper>
