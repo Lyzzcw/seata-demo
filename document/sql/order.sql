@@ -27,7 +27,7 @@ CREATE TABLE `order`  (
                             `product_id` bigint(11) NULL DEFAULT NULL COMMENT '商品Id',
                             `num` bigint(11) NULL DEFAULT NULL COMMENT '数量',
                             `user_id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '用户唯一Id',
-                            `create_time` datetime(0) NULL DEFAULT NULL,
+                            `create_time` timestamp NULL DEFAULT NULL,
                             `status` int(1) NULL DEFAULT NULL COMMENT '订单状态 1 未付款 2 已付款 3 已完成 4 待确认 5 已删除',
                             PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;

@@ -121,6 +121,7 @@ public class TCCOrderServiceImpl implements TCCOrderService{
         }
         //3.生成订单 -- 未完成状态
         Order order = Order.builder()
+                .userId(userId)
                 .orderId(orderId)
                 .productId(productId)
                 .createTime(LocalDateTime.now())
@@ -138,7 +139,7 @@ public class TCCOrderServiceImpl implements TCCOrderService{
     @Transactional
     @Override
     public boolean commit(BusinessActionContext businessActionContext) {
-        //检验幂等性，防止重复提交
+        //检验幂等性，防止重复提交 commit阶段如果出现异常 会一直重复该逻辑，所以下面的幂等性很重要
         //FIXME 处的代码从幂等工具类中根据当前类和全局事务ID获取值，由于try阶段执行成功会向其中添加值，confirm方法执行成功会移出这个值，因此在confirm开头判断这个值是否存在就起到了幂等效果，防止重试的效果。
         if(IdempotentUtil.get(getClass(),businessActionContext.getXid()) == null){
             //注意返回值，返回false时将会重试

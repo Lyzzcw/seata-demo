@@ -26,7 +26,7 @@ CREATE TABLE `user`  (
                             `user_id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '用户userId',
                             `money` bigint(11) NULL DEFAULT NULL COMMENT '余额，单位分',
                             `frozen` bigint(11) NULL DEFAULT NULL COMMENT '冻结金额，单位分',
-                            `create_time` datetime(0) NULL DEFAULT NULL,
+                            `create_time` timestamp NULL DEFAULT NULL,
                             PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
 

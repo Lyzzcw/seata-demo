@@ -102,7 +102,7 @@ public class DruidConfig {
             WallFilter wallFilter = new WallFilter();
             WallConfig config = new WallConfig();
             // 是否允许执行 DELETE 语句（建议值为 false）
-            config.setDeleteAllow(false);
+            config.setDeleteAllow(true);
             // 是否允许删除表（建议值为 false）
             config.setDropTableAllow(false);
             wallFilter.setConfig(config);

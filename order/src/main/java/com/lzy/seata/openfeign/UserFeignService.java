@@ -18,12 +18,12 @@ public interface UserFeignService {
     String deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money);
 
     @PostMapping("/seata-user/frozen")
-    String frozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+    String frozen(@RequestParam("userId") String userId,@RequestParam("money") Long money);
 
     @PostMapping("/seata-user/cancelFrozen")
-    String cancelFrozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+    String cancelFrozen(@RequestParam("userId") String userId,@RequestParam("money") Long money);
 
     @PostMapping("/seata-user/commitFrozen")
-    String commitFrozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+    String commitFrozen(@RequestParam("userId") String userId,@RequestParam("money") Long money);
 
 }

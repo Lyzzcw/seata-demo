@@ -26,7 +26,7 @@ CREATE TABLE `store`  (
                             `product_id` bigint(11) NULL DEFAULT NULL,
                             `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
                             `num` bigint(11) NULL DEFAULT NULL COMMENT '数量',
-                            `create_time` datetime(0) NULL DEFAULT NULL,
+                            `create_time` timestamp NULL DEFAULT NULL,
                             `price` bigint(10) NULL DEFAULT NULL COMMENT '单价，单位分',
                             `frozen` bigint(11) NULL DEFAULT NULL COMMENT '冻结的库存',
                             PRIMARY KEY (`id`) USING BTREE
