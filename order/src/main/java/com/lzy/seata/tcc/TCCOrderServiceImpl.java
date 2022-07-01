@@ -99,7 +99,7 @@ public class TCCOrderServiceImpl implements TCCOrderService{
         //FIXME 防止悬挂异常，从事务日志表中获取全局事务ID的状态，如果是cancel状态则不执行。
         Result<TransactionRecord> result = transactionRecordFeignService
                 .getByXid(businessActionContext.getXid());
-        if(StringUtils.equals(result.getCode(), FeignCodes.SUCCESS.getStatus())){
+        if(!StringUtils.equals(result.getCode(), FeignCodes.SUCCESS.getStatus())){
             throw new RuntimeException("事务日志查询失败！");
         }
         // 1 try 2 commit 3 cancel
@@ -183,7 +183,7 @@ public class TCCOrderServiceImpl implements TCCOrderService{
                 .build();
         //这个操作也必须保证幂等性，添加多次和一次效果相同
         Result<TransactionRecord> result = transactionRecordFeignService.add(record);
-        if(StringUtils.equals(result.getCode(),FeignCodes.SUCCESS.getStatus())){
+        if(!StringUtils.equals(result.getCode(),FeignCodes.SUCCESS.getStatus())){
             return false;
         }
         //校验幂等性，空回滚
