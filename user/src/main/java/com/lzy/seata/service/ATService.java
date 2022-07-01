@@ -8,5 +8,5 @@ package com.lzy.seata.service;
  * Description: No Description
  */
 public interface ATService {
-    void deduct(String userId, Long money);
+    String deduct(String userId, Long money);
 }

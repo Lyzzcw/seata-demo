@@ -1,5 +1,6 @@
 package com.lzy.seata.service.impl;
 
+import com.lzy.seata.constant.FeignCodes;
 import com.lzy.seata.entity.User;
 import com.lzy.seata.mapper.UserMapper;
 import com.lzy.seata.service.ATService;
@@ -24,10 +25,11 @@ public class ATServiceImpl implements ATService {
 
     @Transactional
     @Override
-    public void deduct(String userId, Long money) {
+    public String deduct(String userId, Long money) {
         User user = userMapper.selectByUserId(userId);
         Assert.notNull(user,"用户不存在");
         user.setMoney(user.getMoney() - money);
         userMapper.updateByPrimaryKey(user);
+        return FeignCodes.SUCCESS.getStatus();
     }
 }

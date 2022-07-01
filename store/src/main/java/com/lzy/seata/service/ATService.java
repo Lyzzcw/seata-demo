@@ -10,13 +10,9 @@ import com.lzy.seata.entity.Store;
  * Description: No Description
  */
 public interface ATService {
-    /**
-     * 扣减库存
-     * @param id
-     * @param num
-     */
-    String deduct(Long id,Long num);
 
-    Store detail(Long id);
+    String deduct(Long productId,Long num);
+
+    Store detail(Long productId);
 
 }

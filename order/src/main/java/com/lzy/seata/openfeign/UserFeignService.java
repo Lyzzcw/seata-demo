@@ -16,4 +16,14 @@ public interface UserFeignService {
 
     @PostMapping("/seata-user/deduct")
     String deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money);
+
+    @PostMapping("/seata-user/frozen")
+    String frozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+
+    @PostMapping("/seata-user/cancelFrozen")
+    String cancelFrozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+
+    @PostMapping("/seata-user/commitFrozen")
+    String commitFrozen(@RequestParam("productId") String userId,@RequestParam("money") Long money);
+
 }

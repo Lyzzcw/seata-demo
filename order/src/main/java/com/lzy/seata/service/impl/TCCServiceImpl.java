@@ -28,6 +28,8 @@ import java.time.LocalDateTime;
 @Slf4j
 public class TCCServiceImpl implements TCCService {
 
+    @Autowired
+    private StoreFeignService storeFeignService;
 
     @Autowired
     private TCCOrderService tccOrderService;
@@ -38,7 +40,8 @@ public class TCCServiceImpl implements TCCService {
     @GlobalTransactional
     @Override
     public void create(String userId, Long productId, Long num) {
+        Store store = storeFeignService.detail(productId);
         tccOrderService.tryCreate(null,userId,productId,
-                NanoIdUtils.randomNanoId(),num);
+                NanoIdUtils.randomNanoId(),num,num*store.getPrice());
     }
 }

@@ -27,8 +27,8 @@ public class ATController {
     }
 
     @PostMapping("detail")
-    public Store detail(@RequestParam("id") Long id){
-        return atService.detail(id);
+    public Store detail(@RequestParam("productId") Long productId){
+        return atService.detail(productId);
     }
 
 }

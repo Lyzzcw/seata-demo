@@ -21,13 +21,7 @@ public class ATController {
     private ATService atService;
 
     @PostMapping("deduct")
-    public int deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money){
-        try {
-            atService.deduct(userId,money);
-            return 0;
-        }catch (Exception e){
-            log.error("扣除余额失败",e);
-            return -1;
-        }
+    public String deduct(@RequestParam("userId") String userId,@RequestParam("money") Long money){
+          return   atService.deduct(userId,money);
     }
 }

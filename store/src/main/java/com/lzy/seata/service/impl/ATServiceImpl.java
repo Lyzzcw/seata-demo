@@ -27,8 +27,8 @@ public class ATServiceImpl implements ATService {
 
     @Transactional
     @Override
-    public String deduct(Long id, Long num) {
-        Store store = storeMapper.selectByPrimaryKey(id);
+    public String deduct(Long productId, Long num) {
+        Store store = storeMapper.findByProductId(productId);
         Assert.notNull(store,"物品不存在");
         store.setNum(store.getNum() - num);
         storeMapper.updateByPrimaryKey(store);
@@ -36,8 +36,8 @@ public class ATServiceImpl implements ATService {
     }
 
     @Override
-    public Store detail(Long id) {
-        return storeMapper.selectByPrimaryKey(id);
+    public Store detail(Long productId) {
+        return storeMapper.findByProductId(productId);
     }
     
 }

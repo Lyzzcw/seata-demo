@@ -116,4 +116,11 @@
       status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="findByOrderId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from order
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </select>
 </mapper>

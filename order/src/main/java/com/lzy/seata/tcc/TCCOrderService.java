@@ -33,7 +33,8 @@ public interface TCCOrderService {
                       @BusinessActionContextParameter(paramName = "userId") String userId,
                       @BusinessActionContextParameter(paramName = "productId") Long productId,
                       @BusinessActionContextParameter(paramName = "orderId") String orderId,
-                      @BusinessActionContextParameter(paramName = "num") Long num);
+                      @BusinessActionContextParameter(paramName = "num") Long num,
+                      @BusinessActionContextParameter(paramName = "money") Long money);
 
     /*
         二阶段的commit方法，用于事务的提交

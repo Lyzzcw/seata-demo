@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface StoreFeignService {
 
     @PostMapping("/seata-store/deduct")
-    String deduct(@RequestParam("id") Long id,@RequestParam("num") Long num);
+    String deduct(@RequestParam("productId") Long productId,@RequestParam("num") Long num);
 
     @PostMapping("/seata-store/detail")
-    Store detail(@RequestParam("id") Long id);
+    Store detail(@RequestParam("productId") Long productId);
 
     @PostMapping("/seata-store/frozen")
     String frozen(@RequestParam("productId") Long productId,@RequestParam("num") Long num);

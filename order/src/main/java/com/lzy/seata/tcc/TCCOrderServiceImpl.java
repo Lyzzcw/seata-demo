@@ -9,12 +9,14 @@ import com.lzy.seata.entity.TransactionRecord;
 import com.lzy.seata.mapper.OrderMapper;
 import com.lzy.seata.openfeign.StoreFeignService;
 import com.lzy.seata.openfeign.TransactionRecordFeignService;
+import com.lzy.seata.openfeign.UserFeignService;
 import com.lzy.seata.util.IdempotentUtil;
 import io.seata.rm.tcc.api.BusinessActionContext;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PreDestroy;
@@ -75,7 +77,7 @@ import java.time.LocalDateTime;
  * 空回滚：在执行cancel之前才能根据事务状态表查询当前全局事务是否已经执行成功try方法
  * 悬挂：在执行try方法之前，根据事务状态表查询当前全局事务是否已经执行过cancel方法
  */
-@Component
+@Service
 @Slf4j
 public class TCCOrderServiceImpl implements TCCOrderService{
 
@@ -83,13 +85,15 @@ public class TCCOrderServiceImpl implements TCCOrderService{
     private TransactionRecordFeignService transactionRecordFeignService;
     @Autowired
     private StoreFeignService storeFeignService;
+    @Autowired
+    private UserFeignService userFeignService;
     @Resource
     private OrderMapper orderMapper;
 
     @Transactional
     @Override
     public boolean tryCreate(BusinessActionContext businessActionContext,
-                             String userId, Long productId, String orderId,Long num) {
+                             String userId, Long productId, String orderId,Long num,Long money) {
         log.info("-------开始第一阶段的事务，事务组XID：{}-------",businessActionContext.getXid());
         //判断cancel阶段是否已经执行过 --- 事务日志
         //FIXME 防止悬挂异常，从事务日志表中获取全局事务ID的状态，如果是cancel状态则不执行。
@@ -106,25 +110,29 @@ public class TCCOrderServiceImpl implements TCCOrderService{
 
         //开始try ---- 冻结库存
         //1.冻结库存
-        String frozenResult = storeFeignService.frozen(productId,num);
-        if(!StringUtils.equals(frozenResult,FeignCodes.SUCCESS.getStatus())){
+        String frozenStoreResult = storeFeignService.frozen(productId,num);
+        if(!StringUtils.equals(frozenStoreResult,FeignCodes.SUCCESS.getStatus())){
             throw new RuntimeException("冻结库存失败");
         }
         //2.冻结资金
+        String frozenUserResult = userFeignService.frozen(userId,money);
+        if(!StringUtils.equals(frozenUserResult,FeignCodes.SUCCESS.getStatus())){
+            throw new RuntimeException("冻结资金失败");
+        }
         //3.生成订单 -- 未完成状态
         Order order = Order.builder()
                 .orderId(orderId)
                 .productId(productId)
                 .createTime(LocalDateTime.now())
                 .num(num)
-                .status(OrderCodes.PAID.getStatus())
+                .status(OrderCodes.UNCONFIRMED.getStatus())
                 .build();
         orderMapper.insert(order);
 
         //保证幂等性 (在cancel或commit二阶段 后移除)
         //FIXME 向幂等工具类中添加一个标记，key为当前类和全局事务ID，value为当前时间戳。
         IdempotentUtil.add(getClass(), businessActionContext.getXid(), System.nanoTime());
-        return false;
+        return true;
     }
 
     @Transactional
@@ -141,14 +149,24 @@ public class TCCOrderServiceImpl implements TCCOrderService{
         Long productId = Long.parseLong(businessActionContext.getActionContext("productId").toString());
         Long num = Long.parseLong(businessActionContext.getActionContext("num").toString());
         //释放冻结库存
-        String commitFrozenResult = storeFeignService.commitFrozen(productId,num);
-        if(!StringUtils.equals(commitFrozenResult,FeignCodes.SUCCESS.getStatus())){
+        String commitFrozenStoreResult = storeFeignService.commitFrozen(productId,num);
+        if(!StringUtils.equals(commitFrozenStoreResult,FeignCodes.SUCCESS.getStatus())){
+            //二阶段逻辑上不允许失败 ,返回false重试 这里其实也要做一下幂等 防止后续操作失败重复释放
+            return false;
+        }
+        //释放冻结资金
+        String userId = businessActionContext.getActionContext("userId").toString();
+        Long money = Long.parseLong(businessActionContext.getActionContext("money").toString());
+        String commitFrozenUserResult = userFeignService.commitFrozen(userId,money);
+        if(!StringUtils.equals(commitFrozenUserResult,FeignCodes.SUCCESS.getStatus())){
             //二阶段逻辑上不允许失败 ,返回false重试
             return false;
         }
         //修改订单状态为已完成
-
-
+        String orderId = businessActionContext.getActionContext("orderId").toString();
+        Order order = orderMapper.findByOrderId(orderId);
+        order.setStatus(OrderCodes.COMPLETED.getStatus());
+        orderMapper.updateByPrimaryKeySelective(order);
         //提交成功,移除幂等校验
         //FIXME 从幂等工具类中移出try方法中添加的值。
         IdempotentUtil.remove(getClass(), businessActionContext.getXid());
@@ -178,15 +196,26 @@ public class TCCOrderServiceImpl implements TCCOrderService{
         Long productId = Long.parseLong(businessActionContext.getActionContext("productId").toString());
         Long num = Long.parseLong(businessActionContext.getActionContext("num").toString());
         //释放冻结库存
-        String cancelFrozenResult = storeFeignService.cancelFrozen(productId,num);
-        if(!StringUtils.equals(cancelFrozenResult,FeignCodes.SUCCESS.getStatus())){
+        String cancelFrozenStoreResult = storeFeignService.cancelFrozen(productId,num);
+        if(!StringUtils.equals(cancelFrozenStoreResult,FeignCodes.SUCCESS.getStatus())){
+            //二阶段逻辑上不允许失败 ,返回false重试  这里其实也要做一下幂等 防止后续操作失败重复释放
+            return false;
+        }
+        //释放冻结资金
+        String userId = businessActionContext.getActionContext("userId").toString();
+        Long money = Long.parseLong(businessActionContext.getActionContext("money").toString());
+        String cancelFrozenUserResult = userFeignService.cancelFrozen(userId,money);
+        if(!StringUtils.equals(cancelFrozenUserResult,FeignCodes.SUCCESS.getStatus())){
             //二阶段逻辑上不允许失败 ,返回false重试
             return false;
         }
         //删除该订单 --- 逻辑删除
-
+        String orderId = businessActionContext.getActionContext("orderId").toString();
+        Order order = orderMapper.findByOrderId(orderId);
+        order.setStatus(OrderCodes.DELETE.getStatus());
+        orderMapper.updateByPrimaryKeySelective(order);
         //回滚成功 则移除幂等校验
         IdempotentUtil.remove(getClass(),businessActionContext.getXid());
-        return false;
+        return true;
     }
 }
