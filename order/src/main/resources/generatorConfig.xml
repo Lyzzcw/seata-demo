@@ -55,12 +55,19 @@
         </javaClientGenerator>
         <!-- tableName是数据库中的表名，domainObjectName是生成的JAVA模型名，后面的参数不用改，要生成更多的表就在下面继续加table标签 -->
         <!-- catalog datasource -->
-        <table schema="seata-order" tableName="order" domainObjectName="Order"
+        <!--<table schema="seata-order" tableName="order" domainObjectName="Order"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false" catalog="" >
-            <!-- 指定列的数据类型 -->
+            &lt;!&ndash; 指定列的数据类型 &ndash;&gt;
             <columnOverride column="create_time" javaType="java.time.LocalDateTime"/>
+        </table>-->
+
+        <table schema="seata-order" tableName="transaction_log" domainObjectName="TransactionLog"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" catalog="" >
+
         </table>
     </context>
 </generatorConfiguration>

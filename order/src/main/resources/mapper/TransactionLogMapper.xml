@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzy.seata.mapper.TransactionLogMapper">
+  <resultMap id="BaseResultMap" type="com.lzy.seata.entity.TransactionLog">
+    <constructor>
+      <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="transaction_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="business" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="foreign_key" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, transaction_id, business, foreign_key
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from transaction_log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from transaction_log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.lzy.seata.entity.TransactionLog">
+    insert into transaction_log (id, transaction_id, business, 
+      foreign_key)
+    values (#{id,jdbcType=BIGINT}, #{transactionId,jdbcType=VARCHAR}, #{business,jdbcType=VARCHAR}, 
+      #{foreignKey,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lzy.seata.entity.TransactionLog">
+    insert into transaction_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="transactionId != null">
+        transaction_id,
+      </if>
+      <if test="business != null">
+        business,
+      </if>
+      <if test="foreignKey != null">
+        foreign_key,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="transactionId != null">
+        #{transactionId,jdbcType=VARCHAR},
+      </if>
+      <if test="business != null">
+        #{business,jdbcType=VARCHAR},
+      </if>
+      <if test="foreignKey != null">
+        #{foreignKey,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lzy.seata.entity.TransactionLog">
+    update transaction_log
+    <set>
+      <if test="transactionId != null">
+        transaction_id = #{transactionId,jdbcType=VARCHAR},
+      </if>
+      <if test="business != null">
+        business = #{business,jdbcType=VARCHAR},
+      </if>
+      <if test="foreignKey != null">
+        foreign_key = #{foreignKey,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lzy.seata.entity.TransactionLog">
+    update transaction_log
+    set transaction_id = #{transactionId,jdbcType=VARCHAR},
+      business = #{business,jdbcType=VARCHAR},
+      foreign_key = #{foreignKey,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <select id="selectByTransactionId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from transaction_log
+    where transaction_id = #{transactionId,jdbcType=VARCHAR}
+  </select>
+</mapper>

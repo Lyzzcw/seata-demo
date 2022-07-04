@@ -20,7 +20,7 @@ public class ATController {
     @Autowired
     private ATService atService;
 
-    @PostMapping("deduct")
+    @PostMapping("atOrder")
     public int create(@RequestParam("userId") String userId,
                       @RequestParam("productId") Long productId,
                       @RequestParam("num") Long num){

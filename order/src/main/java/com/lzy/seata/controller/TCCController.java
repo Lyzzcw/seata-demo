@@ -23,7 +23,7 @@ public class TCCController {
     @Autowired
     private TCCService tccService;
 
-    @PostMapping("placeOrder")
+    @PostMapping("tccOrder")
     public Result<String> create(@RequestParam("userId") String userId,
                          @RequestParam("productId") Long productId,
                          @RequestParam("num") Long num){
