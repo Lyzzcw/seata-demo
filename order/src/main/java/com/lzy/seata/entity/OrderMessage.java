@@ -1,10 +1,7 @@
 package com.lzy.seata.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,8 +10,11 @@ import lombok.NoArgsConstructor;
  * Time: 10:37
  * Description: No Description
  */
-@Builder
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class OrderMessage extends AbstractMessage{
-
+    private  String id;
 }
