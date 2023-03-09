@@ -37,6 +37,10 @@ public class MQController {
     public Result<String> create(@RequestParam("userId") String userId,
                                  @RequestParam("productId") Long productId,
                                  @RequestParam("num") Long num){
+        // 先校验 库存，用户余额是否满足
+
+
+        // 生成正式订单
         Order order = Order.builder()
                 .orderId(NanoIdUtils.randomNanoId())
                 .productId(productId)
@@ -47,11 +51,14 @@ public class MQController {
                 .build();
 
         try {
+            //如果transactionSendResult = RollBack 则订单创建失败
             TransactionSendResult transactionSendResult =
                     orderProducer.send(JSON.toJSONString(order),"order",null);
         }catch (MQClientException mqClientException){
             log.error("send mq error:{}",mqClientException);
         }
+
+        //finally 释放redis锁
 
         return Result.resultSuccess(FeignCodes.SUCCESS.getStatus()
                 ,FeignCodes.SUCCESS.getMsg(),userId);

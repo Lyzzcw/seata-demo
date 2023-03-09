@@ -25,9 +25,9 @@ public class OrderConsumerListener implements MessageListenerConcurrently {
         log.info("消费者线程监听到消息。");
         try{
             for (MessageExt message:list) {
-                log.info("开始处理订单数据，准备扣除库存....");
+//                log.info("开始处理订单数据，准备扣除库存....");
 
-
+                //增加redis锁防止账户并发
                 log.info("扣除库存成功，开始扣除账户余额....");
             }
             return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;

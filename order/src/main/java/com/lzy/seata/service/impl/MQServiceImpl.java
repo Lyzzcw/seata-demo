@@ -5,6 +5,7 @@ import com.lzy.seata.entity.TransactionLog;
 import com.lzy.seata.mapper.OrderMapper;
 import com.lzy.seata.mapper.TransactionLogMapper;
 import com.lzy.seata.service.MQService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,19 +21,21 @@ import javax.annotation.Resource;
  */
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class MQServiceImpl implements MQService {
 
-    @Resource
-    private OrderMapper orderMapper;
-    @Resource
-    private TransactionLogMapper transactionLogMapper;
+    final OrderMapper orderMapper;
+    final TransactionLogMapper transactionLogMapper;
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void createOrder(final Order order, String transactionId) {
-        //1.创建订单
+
+        //1.扣除库存,增加redis锁防止超卖
+
+        //2.创建订单
         orderMapper.insert(order);
-        //2.写入事务日志
+        //3.写入事务日志
         TransactionLog transactionLog = new TransactionLog();
         transactionLog.setTransactionId(transactionId);
         transactionLog.setBusiness("order");

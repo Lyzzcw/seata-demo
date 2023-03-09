@@ -76,7 +76,12 @@ public class OrderTransactionListener implements TransactionListener {
         if (transactionLogMapper.selectByTransactionId(transactionId) != null) {
             state = LocalTransactionState.COMMIT_MESSAGE;
         } else {
-            //回查生成订单失败之后，这里直接回滚该消息 需要释放被冻结的订单,通知用户等操作
+            //回查生成订单失败之后，这里直接回滚该消息
+            //TODO 其实会存在三种情况
+            // 1.库存成功，订单和日志失败
+            // 2.库存，订单成功，日志失败
+            // 3.库存，订单，日志 均失败
+            // 需要不同情况来做回滚处理并通知用户下单失败
             state = LocalTransactionState.ROLLBACK_MESSAGE;
         }
         log.info("结束本地事务状态查询：{}", state);
