@@ -31,7 +31,14 @@ public class MQServiceImpl implements MQService {
     @Override
     public void createOrder(final Order order, String transactionId) {
 
-        //1.扣除库存,增加redis锁防止超卖
+        //1.扣除库存
+        //1.1 数据库乐观锁模式:尝试扣减库存，扣减库存成功才会进行下单逻辑
+        //  update auction_auctions set
+        //  quantity = quantity-#count#
+        //  where auction_id = #itemId# and quantity >= #count#
+        //1.2 redis+lua脚本
+        //1.3 redis watch命令 乐观锁
+
 
         //2.创建订单
         orderMapper.insert(order);

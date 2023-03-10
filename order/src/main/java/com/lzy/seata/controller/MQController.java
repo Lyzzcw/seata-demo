@@ -58,8 +58,6 @@ public class MQController {
             log.error("send mq error:{}",mqClientException);
         }
 
-        //finally 释放redis锁
-
         return Result.resultSuccess(FeignCodes.SUCCESS.getStatus()
                 ,FeignCodes.SUCCESS.getMsg(),userId);
     }
